@@ -7,5 +7,9 @@ Due to the digital age and growing demands from customer's for a brands presence
 
 Given the current state & global regulatory constraints related to Collection, handling and disposing of Customer Personal data, the airline is looking to do the below to address the Customers & Service agent concerns .
 
+1. Provide a personalized service to its customers at all its touchpoints (channels of interaction both digital & in-person)
+2. Empower the Service agents to delight the Customers by providing a real-time 360 degree view of customer they are serving with Intelligent decision support capability. 
+
+
 
    
