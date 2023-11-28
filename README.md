@@ -43,6 +43,7 @@ Below are the team members of Visioneers
     - [Technology Stack]
   - [Integration View]
   - [Security View]
+  - [Information Architecture]
 - [Benefits & Trade-offs of Proposed Architecture]
 - [Technology Decisions & Rationale]
 - [Roadmap & Implementation Guidance]
