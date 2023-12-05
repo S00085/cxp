@@ -1,7 +1,8 @@
 # Solution Overview
 The below diagram provides a conceptual view of the proposed solution.
 
-![Solution Conceptual View](Customer_Mgmt_Platform_Arch_Katas-CMP_Conceptual_View.png)
+![Solution Conceptual View](Customer_Mgmt_Platform_Arch_Katas-CMP_Simplified_Conceptual.png)
+
 
 ## Key capabilities of proposed solution
 
