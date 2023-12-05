@@ -28,9 +28,9 @@ Below are the team members of Visioneers
 
 [Solution Overview](3.solution_overview/README.md)
 
-- [Solution Conceptual View](3.solution_overview/conceptual_view.md)
-- [Benefits of Proposed solution](3.solution_overview/benefits.md)
-- [Innovations](3.solution_overview/innovations.md)
+- [Key capabilities of proposed solution](3.solution_overview/README.md#key-capabilities-of-proposed-solution)
+- [Benefits of Proposed solution](3.solution_overview/README.md#benefits-of-proposed-solution)
+- [Innovations](3.solution_overview/README.md#innovations)
 
 [Proposed Solution Architecture]
 - [Architecture Vision]
