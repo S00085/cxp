@@ -10,6 +10,42 @@ Given the current state & global regulatory constraints related to Collection, h
 1. Provide a personalized service to its customers at all its touchpoints (channels of interaction both digital & in-person)
 2. Empower the Service agents to delight the Customers by providing a real-time 360 degree view of customer they are serving with Intelligent decision support capability. 
 
+## Problem Brief
+In order to achieve its goal of improving the Customer experience and delighting its customers, Gamma airways senior management forumulated the below business vision.
+
+![Business Vision](Customer_Mgmt_Platform_Arch_Katas-CMP_Business_Vision.png)
+
+The vision is to create a comprehensive intelligent Customer Management Platform (CMP) which enables the foundation of a data-driven Customer centric organization. This platform will enable to manage customer information across all interaction channels (both digital & service channels) and which provides the below high level capabilities
+
+1. Unified & Enhanced Customer Profiles
+2. Near Real time view of the Customer Journey
+3. Intelligent & context aware recommendations / actions for Service channels and to enable personalized interaction with Customers
+
+## Stakeholder Concerns & Expectations
+Below are the key stakeholders concerns and their expections from the newly envisioned Customer Management Platform (CMP)
 
 
-   
+| Stakeholder | Concerns & Expectations |
+| --- | --- |
+| Customer | - Personalized connected experience across digital channels & service channels <br/> - Personal data protection & privacy |
+| Call Center agent | - Unified Customer Profile & segmentation <br/> - Near real time view of Customer Journey & status <br/> - Contextual recommendations & actions to proactively address customer concerns |
+| Check-in agent | - Unified Customer Profile & segmentation <br/> - Near real time view of Customer journey & status <br/> - Contextual recommendations & actions to proactively address customer concerns <br/> - Near real-time view of operational events and their impact on customers and corresponding recommendations per customer|
+| Cabin Crew | - Unified customer profile & segmentation <br/> - Customer preferences, choices, past interactions , complaints & travel history <br/> - Contextual recommendations, offers & personalization |
+| Partners & Service Providers | - Anonymized customer profile & segmentation |
+| Data Analyst | - Self-service analytics to unearth fresh customer insights |
+| Customer affairs & complaints| - Automated Case & compensation management on operational disruptions <br/> - Near real time alerts on operational disruption events|
+| Data Privacy Office | - Centralized consent management aligning to Data Privacy regulation by region <br/> - Reliable and accurate view of Personal information stored, processed & shared to partners <br/> - Ability to support personal data consent revocations by Customers|    
+
+## Current state key challenges
+Below are the key challenges observed in the Current state
+
+1. Disconnected operational systems leading to information silos & lack of unified customer profile
+2. Lack of real-time view of the Customer journey within the organization
+3. Customer consent is spread across different operational systems and lack of unified view of consent information across the system landscape
+
+## Business Goals
+1. Increased revenue
+2. Enhanced customer satisfaction and retention
+
+## Key Assumptions & Constraints
+<TBD>
