@@ -44,7 +44,7 @@ Below are the team members of Visioneers
   - [Integration View]
   - [Security View]
   - [Information Architecture]
-- [Benefits & Trade-offs of Proposed Architecture]
+- [Benefits & Trade-offs of Proposed Architecture / Alternate solutions]
 - [Technology Decisions & Rationale]
 - [Roadmap & Implementation Guidance]
 
