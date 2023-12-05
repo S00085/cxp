@@ -15,11 +15,11 @@ Below are the team members of Visioneers
 
 [Context & Motivation](1.context_and_motivation/README.md)
 
-- [Problem Brief](1.context_and_motivation/problem_brief.md)
-- [Stakeholder concerns & Expectations](1.context_and_motivation/stakeholder_concerns_expectations.md)
-- [Current state - Key challenges](1.context_and_motivation/current_state_key_challenges.md)
-- [Business Goals, Drivers & Key requirements](1.context_and_motivation/business_goals_driver_requirements.md)
-- [Key Assumptions & Constraints](1.context_and_motivation/key_assumptions_constraints.md)
+- [Problem Brief](1.context_and_motivation/README.md#problem-brief)
+- [Stakeholder concerns & Expectations](1.context_and_motivation/README.md#stakeholder-concerns--expectations)
+- [Current state - Key challenges](1.context_and_motivation/README.md#current-state-key-challenges)
+- [Business Goals, Drivers & Key requirements](1.context_and_motivation/README.md#business-goals)
+- [Key Assumptions & Constraints](1.context_and_motivation/README.md#key-assumptions--constraints)
 
 [Architecture Analysis](2.architecture_analysis/README.md)
 
