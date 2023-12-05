@@ -48,4 +48,5 @@ Below are the key challenges observed in the Current state
 2. Enhanced customer satisfaction and retention
 
 ## Key Assumptions & Constraints
-$${\color{red}Red}$$TBD
+
+Blah blah blah...
