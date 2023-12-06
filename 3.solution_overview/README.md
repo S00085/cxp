@@ -11,11 +11,10 @@ This involves collecting existing Customer profiles, related transactions, past 
 ## Unify Profiles
 Once the relevant information is collected, this information is cleaned, de-duped and aggregated with the goal of unifying the Customer profile. This involves the key step of arriving an a unified customer identity and the set of attributes which are used for uniquely identifying the Customer at each interaction touchpoint. 
 
-Customer Identification is the foundation for unifying & enhancing customer profiles. This is a core capability of the Customer Management Platform.
+Customer Identification is the foundation for unifying & enhancing customer profiles. This is a core capability of the Customer Management Platform.The main goal of this function is to create a 360 deg, view of the customer along with their past transactions, interactions, preferences etc.
 
-The main goal of this function is to create a 360 deg, view of the customer along with their past transactions, interactions, preferences etc.
-
-## Protect Data
+## Protect Personal Data
+Since the CMP will hold sensitive Customer personal information, it will provide the Personal data protection capabilities such as 
 
 ## Orchestrate / Automate
 
