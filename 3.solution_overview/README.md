@@ -16,10 +16,13 @@ The CMP will provide the below key functions for the Airline
 The customer management platform (CMP) is envisioned to provide the below key capabilities for the Airline
 
 ### Customer Management
+The Customer Managment capability provides the core function of building and exposing a unified customer profile along with a near real-time 360 degree view of their preferences, choices, journey status, feedback / complaints. This capability also provides the necessary contextual recommended next steps / actions for Customer service agents to provide a personalized experience for the customer during their interactions. The consents provided by the customers through the various interaction channels (Direct & Service) and necessary revocation capabilities are some of the other key features provided by this capability.
 
 ### Case Management
+The CMP also provides the ability to create, amend & resolve Cases which are raised through out the customer journey. This capability provides the ability for the airline to Design & implement complex workflow & rules driven case flows within the Customer centric organization
 
 ### Journey Orchestration
+The Journey orchestration capability provides the ability to intelligently and proactively orchestrate automated actions (compensation, raising cases etc) which are useful during disruption schenarios such as flight cancellation, baggage mishandling etc. 
 
-### Integration & Publishing
-
+### Integrate & Publish
+The CMP allows integrating data (bulk & streaming) from the channels, backend transactional systems and partner systems to build a unified customer profile with past transactions, journey status using operational events etc. The Customer profile & other cusotmer insights gleaned from this data is exposed as APIs and events which can be consumed by Channels. The solution will also publish anonymized customer segment information for partners aligning to consent & regulatory constraints.
