@@ -17,10 +17,10 @@ Once the relevant information is collected, this information is cleaned, de-dupe
 Customer Identification is the foundation for unifying & enhancing customer profiles. This is a core capability of the Customer Management Platform.The main goal of this function is to **create a 360 deg, view of the customer** along with their past transactions, interactions, preferences etc.
 
 ### Protect
-Since the CMP will hold sensitive Customer personal information, the platform will provide the necessary regulatory & compliance features with respect to personal data privacy requirements.
+Since the CMP will hold **sensitive Customer personal information**, the platform will provide the necessary **regulatory & compliance features** with respect to personal data privacy requirements.
 
 ### Orchestrate
-Based on the Unified customer profile & enhanced insights the Platform will provide automated orchestration features such as automated compensation management , case management etc.
+Based on the Unified customer profile & enhanced insights the Platform will provide **automated orchestration features** such as automated compensation management , case management etc.
 
 ### Publish
-The key capability of the CMP is to expose the unified customer profile, preferences , insights gleaned from the various data sources as events, APIs to interested channels and touchpoints. This data can be anonimized and shared to the Airline partners / service providers as well aligning to regulatory needs / constraints
+The key capability of the CMP is to **expose the unified customer profile, preferences , insights gleaned from the various data sources as events, APIs to interested channels and touchpoints**. This data can be **anonimized and shared to the Airline partners / service providers** as well aligning to regulatory needs / constraints
