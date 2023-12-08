@@ -18,7 +18,7 @@ blah blah
 ![Architecture Context](CMP_System_Context_View.png)
 
 ### Container Diagram
-![Container Diagram](CMP_C4_Conatiner_View.png)
+![Container Diagram](CMP_C4_Container_View.png)
 
 ### Information Architecture
 ![Information Architecture](CMP_Information_flow.png)
