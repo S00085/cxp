@@ -12,8 +12,12 @@ blah blah
 
 ## Architecture Styles & Patterns
 
-
 ## Architecture Views
+
+### Architecture Context
+
+![Architecture Context](CMP_System_Context_View.png)
+
 
 ### Logical View
 
