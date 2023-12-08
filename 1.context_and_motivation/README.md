@@ -13,7 +13,7 @@ Given the current state & global regulatory constraints related to Collection, h
 ## Problem Brief
 In order to achieve its goal of improving the Customer experience and delighting its customers, Gamma airways senior management forumulated the below business vision.
 
-![Business Vision](Customer_Mgmt_Platform_Arch_Katas-CMP_Business_Vision.png)
+![Business Vision](Customer_Mgmt_Platform_Arch_Katas-CMP_Business_Vision.svg)
 
 The vision is to create a comprehensive intelligent Customer Management Platform (CMP) which enables the foundation of a data-driven Customer centric organization. This platform will enable to manage customer information across all interaction channels (both digital & service channels) and which provides the below high level capabilities
 
