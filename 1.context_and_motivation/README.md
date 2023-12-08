@@ -17,9 +17,11 @@ In order to achieve its goal of improving the Customer experience and delighting
 
 The vision is to create a comprehensive intelligent Customer Management Platform (CMP) which enables the foundation of a data-driven Customer centric organization. This platform will enable to manage customer information across all interaction channels (both digital & service channels) and which provides the below high level capabilities
 
-1. Unified & Enhanced Customer Profiles
-2. Near Real time view of the Customer Journey
-3. Intelligent & context aware recommendations / actions for Service channels and to enable personalized interaction with Customers
+1. Unified Customer Profiles
+2. Hyper personalisation 
+3. Real time view of the Customer Journey
+4. Automation at center for enhanced operations and customer experience
+5. Intelligent & context aware recommendations to enable personalized interaction with Customers
 
 ## Stakeholder Concerns & Expectations
 Below are the key stakeholders concerns and their expections from the newly envisioned Customer Management Platform (CMP)
@@ -36,13 +38,16 @@ Below are the key stakeholders concerns and their expections from the newly envi
 | Customer affairs & complaints| - Automated Case & compensation management on operational disruptions <br/> - Near real time alerts on operational disruption events|
 | Data Privacy Office | - Centralized consent management aligning to Data Privacy regulation by region <br/> - Reliable and accurate view of Personal information stored, processed & shared to partners <br/> - Ability to support personal data consent revocations by Customers|    
 
+**
+
 ## Current state key challenges
 Below are the key challenges observed in the Current state
 
-1. Disconnected operational systems leading to information silos & lack of unified customer profile, resulting in operational inefficiencies and delays.
-2. Lack of real-time view of the Customer journey within the organization
+1. Disconnected operational systems leading to information silos & lack of unified customer profile, resulting in operational inefficiencies
+2. Lack of real-time view of the Customer journey within the organization e.g. Callcenter 
 3. Customer consent is spread across different operational systems and lack of unified view of consent information across the system landscape
 4. Limitations of current dataset resulting in inability to unearth fresh insights.
+5. Inefficient Manual Business process e.g. Compensation  
 
 ## Business Goals
 1. Increased revenue
@@ -52,36 +57,10 @@ Below are the key challenges observed in the Current state
 
 ## Business Drivers
 
-1. A centralized repository that stores customer data from various touchpoints and systems.
+1. A centralized customer profile and relationship from various customer touchpoints and systems
 2. Personalization features to tailor interactions and offers to individual customers.
 3. Capability to share profile data with strategic partners while preserving anonymity in compliance with privacy regulations.
-4. Real time data processing and analysis to provide timely insights.
-5. Advanced analytics capabilities.
-6. Gauge passenger satisfaction from social media.
-
-## Key Assumptions & Constraints
-
-* New solution will be hosted on cloud and the region will be chosen closer to the area of operation.
-* Direct connect exist between current on-premise data center and cloud provider.
-* Availability of various systems to handle various key areas
-    - Loyalty platform
-    - Baggage management and handling system
-    - Contact Centre System
-    - Passenger Reservation System
-    - Inflight retail system
-    - Meal order system
-    - Offer management system
-    - Marketing management system
-    - Check-in systems
-    - Knowledge base
-
-* Existing systems could either be on-premise or on cloud.
-* Existing notification system will be used for all kind of customer interactions.
-* Ability of other systems to support event based architecture.
-* Azure eventhub will be used for eventing.
-* Azure Open AI will be used for self-service, personalized recommendations and resolution options.
-* New solution will be use existing enterprise logging solution
-* New solution will follow the current monitoring and observability defined by enterprise.
-* Existing enterprise defined security standards will be followed by the new solution.
-* Compensation management will be handled by an existing system in the landscape.
-* Case management will be developed as part of the new solution.
+4. Real time data processing and analysis to provide timely insights
+5. Advanced analytics & AI capabilities to improve customer Experience
+6. Hyper personalisation and feedback loop mechanism from social media **
+7. Automation / Manage operations by exceptions **
