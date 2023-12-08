@@ -15,7 +15,18 @@ blah blah
 ## Architecture Views
 
 ### Architecture Context
+![Architecture Context](CMP_System_Context_View.png)
 
+### Container Diagram
+![Container Diagram](CMP_C4_Conatiner_View.png)
+
+### Information Architecture
+![Information Architecture](CMP_C4_Information_flow.png)
+
+### Deployment Architecture
+![Deployment Architecture](CMP_C4_Deployment_View.png)
+
+### Architecture Context
 ![Architecture Context](CMP_System_Context_View.png)
 
 
