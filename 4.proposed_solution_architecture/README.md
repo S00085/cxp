@@ -26,10 +26,25 @@ blah blah
 ### Deployment Architecture
 ![Deployment Architecture](CMP_Deployment_View.png)
 
+* New solution will be hosted on Azure cloud and the region will be chosen closer to the area of operation.
+* Azure Express route exist between current on-premise data center and cloud provider.
+* Azure eventhub will be used for eventing.
+* Azure Open AI will be used for self-service, personalized recommendations and resolution options.
 
-### Logical View
+## Key Assumptions & Constraints
 
-#### Key components
+* Most of the Key operations systems can publish the requried events in realtime
+* Customer Identity is managed in one central IDP (Okta)
+* Customer Notification is managed through a central Notification Platform considering Corporate Communciation Standards
+* Customer interactions will remain with the existing channels like Contact center, Booking Engine
+* Enterprise Data Platform will own the data cleansing and dedupliction of the customer profile sources from various system
+* DPO aggremement is available to capture & process social profile informaiton based on optional customer consent **
+* Existing systems could either be on-premise or on cloud.
+* Consent management notification from Customer Management Platform is expected to be respected and processed by all the systems in the landscape 
+* New solution will be use existing enterprise logging solution
+* New solution will follow the current monitoring and observability defined by enterprise.
+* Existing enterprise defined security standards will be followed by the new solution.
+* Compensation management will be handled by an existing system in the landscape.
 
 
 
