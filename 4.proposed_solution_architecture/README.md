@@ -38,10 +38,7 @@ This layer provides the integration services to the platform, which allows colle
 The IAM provides the Authentication & Authorization services for the whole platform. Since the CMP is accessed only by Service agents & the Airline stakeholders, this layer is only responsible for maintaining the Airline employee Identities.
 
 ##### Management & Monitoring
-blah blah..
-
-##### Data sources & sinks
-blah blah...
+This layer provides the management & monitoring functions for the platform. Each component of the CMP provides a management & monitoring interface to integrate with this layer.
 
 
 ### Architecture Context
