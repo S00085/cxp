@@ -70,8 +70,7 @@ This layer provides the management & monitoring functions for the platform. Each
 * Consent management notification from Customer Management Platform is expected to be respected and processed by all the systems in the landscape 
 * New solution will be use existing enterprise logging solution
 * New solution will follow the current monitoring and observability defined by enterprise.
-* Existing enterprise defined security standards will be followed by the new solution.
-* Compensation management will be handled by an existing system in the landscape.
-
+* Existing enterprise defined security standards will be followed by the new solution e.g. Zero Trust Policy
+* Payment processing and refunds will be handled by an existing system in the landscape.
 
 
