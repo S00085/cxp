@@ -20,17 +20,23 @@ blah blah...
 ![Logical Architecture View](Customer_Mgmt_Platform_Arch_Katas-CMP_Logical_View.svg)
 
 ##### CMP Portal
-blah blah...
+The CMP portal is the UI layer for the Airline service agents and other key airline stakeholders to interact with the platform. This portal is **not** directly exposed to the Airline Customer. 
+
 ##### Gateway Services
-blah blah...
+The Gateway services layer provides the gateway functions such as Authentication, session management etc. This layer is focused on ensuring that the requests to the platform are secured the necessary authentication and authorization protocols are ensured.
+
 ##### Customer Mgmt. Services
-blah blah..
+This block is composed of the core Customer management capability of the platform. This layer exposes the key capabilities as APIs as well as Events for consumers of the Customer management services. 
+
 ##### Platform Services
-blah blah..
+This layer provides the foundational technology platform services to support eventing, AI/ML predictive & prescriptive analytics, Customer Data attribute management, process engines , business rules etc. The Customer management service relies a lot on the Platform services. 
+
 ##### Integration Services
-blah blah..
-##### Identity & Access Mgmt. 
-blah blah..
+This layer provides the integration services to the platform, which allows collecting data (Batch & Near real time) from the existing on-premise airline transactional systems, Enterprise data platform etc. as well as exposing the Customer management capabilities previously discussed.
+
+##### Identity & Access Mgmt. (IAM) 
+The IAM provides the Authentication & Authorization services for the whole platform. Since the CMP is accessed only by Service agents & the Airline stakeholders, this layer is only responsible for maintaining the Airline employee Identities.
+
 ##### Management & Monitoring
 blah blah..
 
