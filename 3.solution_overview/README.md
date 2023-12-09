@@ -1,5 +1,5 @@
 # Solution Overview
-The below diagram provides a conceptual view of the proposed solution called as Customer Management Platform (CMP).
+The below diagram provides a conceptual view of the proposed solution - Customer Management Platform (CMP).
 
 ![Solution Conceptual View](Customer_Mgmt_Platform_Arch_Katas-CMP_Simplified_Conceptual.svg)
 
