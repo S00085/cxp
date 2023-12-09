@@ -8,11 +8,35 @@ blah blah
 
 ## Guiding Principles
 
-blah blah
+blah blah...
 
 ## Architecture Styles & Patterns
 
+blah blah...
+
 ## Architecture Views
+
+### Logical View
+![Logical Architecture View](Customer_Mgmt_Platform_Arch_Katas-CMP_Logical_View.svg)
+
+##### CMP Portal
+blah blah...
+##### Gateway Services
+blah blah...
+##### Customer Mgmt. Services
+blah blah..
+##### Platform Services
+blah blah..
+##### Integration Services
+blah blah..
+##### Identity & Access Mgmt. 
+blah blah..
+##### Management & Monitoring
+blah blah..
+
+##### Data sources & sinks
+blah blah...
+
 
 ### Architecture Context
 ![Architecture Context](CMP_System_Context_View.png)
