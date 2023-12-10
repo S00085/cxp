@@ -38,8 +38,13 @@ The following are key guiding principles for the proposed Architecture
 |Data Governance | Effective Data governance allows data to be tracked from its original source through its journey till it has been processed and disposed off| Personal data of customers need to be designed with data governance and tools in mind aligning to the capability within the organization handling the customer data|
 
 ## Architecture Styles & Patterns
+The key architectural styles and patterns used in the proposed architecture are 
 
-blah blah...
+| Style | Description | Rationale |
+|---|---|---|
+| Microservices | A microservices architecture is a type of application architecture where the application is developed as a collection of services. It provides the framework to develop, deploy, and maintain microservices architecture diagrams and services independently. | Microservices allow a large application to be separated into smaller independent parts, with each part having its own realm of responsibility. To serve a single user request, a microservices-based application can call on many internal microservices to compose its response.|
+| Event Driven Architecture | An event-driven architecture uses events to trigger and communicate between decoupled services and is common in systems built with microservices. An event is a change in state, or an update, like an Flight departure or Baggage mishandled etc.| Event Driven architectures enable a loosely coupled system which improves availability, resilience, Fault tolerance & evolvability of a system |
+| Lambda Architecture | | |
 
 ## Architecture Views
 
