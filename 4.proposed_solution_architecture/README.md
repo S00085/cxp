@@ -156,14 +156,18 @@ This layer provides the management & monitoring functions for the platform. Each
 
 |  |   |
 | ------- | --- |
-| Availablity % | ***|
-|  | ***|
-|  | ***|
-| Customer Profile Request per second | ***|
-| Customer Profile update events | ***|
-|  | ***|
-
-
+|% Target Availability | 99.99% | 
+| Recovery Time Objective within region | Nill (for key critical core components like customer 360 service) , 10 Minutes Non components like Process Modeler  | 
+| Recovery Time Objective across region | 10 Minutes | 
+| Recovery Point Objective  within region | Nil |
+| Recovery Point Objective  across region | Nill (for key critical core components like customer 360 service) , < 1 Minute Non components like Process Modeler |
+| Max. number of unplanned outages in a year | 2 | 
+| Mean Time between failures | 6 Months | 
+| Customer Profile Request from other channels | 1000 TPS  ****|
+| Customer Profile update events |  1000 TPS ****|
+| Customer 360 Profile Page Request | 100 TPS ****|
+| Case Management views | 100 TPS ****|
+| Case Management create/updates | 10 TPS ****|
 
 ## Key Assumptions & Constraints
 
