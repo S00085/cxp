@@ -139,8 +139,10 @@ This layer provides the management & monitoring functions for the platform. Each
 | GraphQL Engine | Hasura |
 | Reporting Service | Power BI |
 | Data Warehouse | Snowflake |
+| Process Orcherstation Engine | Camunda |
 | Integration Platform | Solace (Realtime e.g. Events from Onpremise Enterprise application), Azure Data Factory (All Batch integrations), Azure APIM (on Demand Interface e.g. Consent Service, Customer 360 Service) |
 | Logging | Splunk (SIEM), Log Analytics workspace |
+| Application Performance Monitoring | Azure App Insights |
 | Tracing | -Micrometer Tracing |
 | Authentication and Authorisation | Microsoft Entra ID to be used for authentication using MSAL for React and Spring Azure  |
 | Cache  | Azure Redis Cache |
