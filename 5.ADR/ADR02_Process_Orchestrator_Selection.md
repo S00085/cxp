@@ -65,7 +65,7 @@ In our context of Customer Management platform due to cost contraints IBM Busine
 
 ## Shorlist Outcome
 
- Due to User-friendlines Camunda & Microsoft Power Automate is shorlisted for further detailed analysis 
+ Camunda & Microsoft Power Automate is shorlisted for further detailed analysis for factors like User-friendly UI, Azure ecosystem etc  
 
  # Detailed Comparison: Camunda vs Microsoft Power Automate
 
