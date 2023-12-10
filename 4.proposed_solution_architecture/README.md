@@ -85,10 +85,18 @@ This layer provides the management & monitoring functions for the platform. Each
 ### Deployment Architecture
 ![Deployment Architecture](CMP_Deployment_View.png)
 
-* New solution will be hosted on Azure cloud and the region will be chosen closer to the area of operation.
-* Azure Express route exist between current on-premise data center and cloud provider.
-* Azure eventhub will be used for eventing.
-* Azure Open AI will be used for self-service, personalized recommendations and resolution options.
+* The new system will be deployed on Microsoft's Azure cloud platform. We will leverage Azure Platform Services, including Azure Kubernetes Service and Azure Postgres which are independent of the Azure-specific environment.
+* The application will be available in multiple regions, with the primary region being selected based on proximity to the operational area. Within each region, the application will be distributed across various Availability Zones for enhanced resilience.
+* For orchestrating microservices, we will utilize Azure Kubernetes Service. These microservices will be developed using Spring Boot. The Hasura GraphQL Engine will facilitate the Case Management APIs, while Azure's native Cosmos GraphQLEngine will handle the Customer Profile APIs.
+* To address caching needs across the application, Azure Redis Cache will be implemented.
+* For event streaming, Azure Event Hub is the chosen platform, complemented by Azure Stream Analytics for stream processing. Azure Databricks will be employed for both batch stream processing and machine learning tasks.
+* For real-time analytics, Apache Druid is selected, and Power BI will be used for reporting, drawing data from Snowflake and Apache Druid.
+* For orchestrating customer journeys, we will use a Journey Orchestrator. Complex orchestrations requiring greater flexibility will be handled by the Camunda Process Orchestration Engine.
+* Customer profiles, along with related data such as bookings, flights, and baggage, will be stored in the Azure Cosmos graph DB.
+* FormIO will serve as the case management form designer.
+* Case data will be stored in Azure Cosmos DB with MongoDB API compatibility, and the Process Orchestration Engine will utilize Managed Elasticsearch. The process models for orchestration will be stored in a Managed PostgreSQL Database.
+* API security will be maintained using OAuth, with Azure Application Gateway, including a Web Application Firewall (WAF), managing API access. Solace will facilitate real-time integration with other enterprise systems, bridging with Azure Event Hub for this purpose. Azure Data Factory will handle all batch integrations.
+* Azure ExpressRoute will be used for secure, reliable connectivity to on-premise data centers.
 
 
 ### Security Architecture
