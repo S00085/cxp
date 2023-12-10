@@ -89,7 +89,7 @@ Azure Cosmos with Mongo DB API was selected for Case Management repository
 
 This recommendation aligns with the need for a database that is adaptable, efficient in handling varied data sets, and supports rapid application development, making Document DB an optimal choice for a modern case management system.
 
-## Why Choose a Azure Cosmos DB Mongo API
+## Why Choose a Azure Cosmos DB Mongo API (Related Decision)
 
 - Application is hosted in Azure 
 - Application already use Azure Cosmos (Graph) DB for Customer Profile  
