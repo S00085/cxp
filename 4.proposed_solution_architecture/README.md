@@ -83,7 +83,7 @@ This layer provides the management & monitoring functions for the platform. Each
 ### Information Architecture
 ![Information Architecture](CMP_Information_flow.png)
 
-* “System of Record” for EK Customer information will be Customer Management Platform, sourcing information various customer touchpoints/systems
+* “System of Record” for Customer profile information will be Customer Management Platform, sourcing information various customer touchpoints/systems
 * Customer Profile and preference one view will be shown in CMP as well as exposed as API via API gateway
 * Solace will be used for Realtime integration with other enterpise system and it will be bridged with Azure Event Hub 
 * Azure Data Factory will be used for all Batch integrations
