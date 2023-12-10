@@ -85,6 +85,47 @@ This layer provides the management & monitoring functions for the platform. Each
 * Azure eventhub will be used for eventing.
 * Azure Open AI will be used for self-service, personalized recommendations and resolution options.
 
+
+### Security Architecture
+![Security Architecture](CMP_Security_View.png)
+
+* The Azure Web Application Firewall (WAF) and the Enterprise Firewall within the Cloud Shared Service provide protection for incoming and outgoing traffic.
+* Traffic to and from every Virtual Network (VNet) is routed through the Cloud Shared Service VNet, specifically via the Enterprise Firewall.
+* Azure Network Watcher and Log Analytics enhance security monitoring by integrating network traffic logs with other log data to identify potential security incidents or breaches.
+* Microsoft Entra Identity (formerly Azure Active Directory) serves as the central identity management system for users, service principals, and security groups.
+* All APIs are secured using OAuth and are made available through the Azure Application Gateway, which includes a Web Application Firewall (WAF).
+* Only essential ports are open to Azure Platform services such as EventHub and CosmosDB, and these are further safeguarded with client IP filtering and Security Groups in the firewall.
+* Azure Virtual Networks and subnets are employed to provide logical isolation for all workloads.
+* Azure Private Link is utilized for secure access to Software as a Service (SaaS) offerings like Solace and Snowflake.
+* Azure Key Vault is implemented for the storage and management of security keys
+
+### Technical Stack
+
+|  | Technical Stack  |
+| ------- | --- |
+| Front End | React JS 18.x , Webpack 5 (Microfront End )|
+| Back End | Spring Boot 3, JDK 17 |
+| API Gateway | Azure APIM |
+| Container orchestration | Azure Kubernetes Service |
+| Database / Repository | Azure Cosmos (Graph) for Customer Profile, Azure Cosmos (Mongo) for Case Management, Azure PostgreSQL for Process Model, ADLS for Raw Data Storage, Elastic search for Orcherstation Engine, Minio for Files |
+| Event Streaming | Azure Event Hub |
+| Stream Processing | Azure Stream Analytics |
+| Stream Batch Processing & ML | Azure DataBricks |
+| Realtime Analytics | Apache Druid |
+| GraphQL Engine | Hasura |
+| Reporting Service | Power BI |
+| Data Warehouse | Snowflake |
+| Integration Platform | Solace (Realtime e.g. Events from Onpremise Enterprise application), Azure Data Factory (All Batch integrations), Azure APIM (on Demand Interface e.g. Consent Service, Customer 360 Service) |
+| Logging | Splunk (SIEM), Log Analytics workspace |
+| Tracing | -Micrometer Tracing |
+| Authentication and Authorisation | Microsoft Entra ID to be used for authentication using MSAL for React and Spring Azure  |
+| Cache  | Azure Redis Cache |
+| CDN | Azure CDN |
+| Neywork | Azure Frontdoor |
+| DNS | Azure DNS |
+| LLM | Azure Open AI |
+| Connectivity to OnPremise | Azure Express route |
+
 ## Key Assumptions & Constraints
 
 * Most of the Key operations systems can publish the requried events in realtime
