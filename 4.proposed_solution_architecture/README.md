@@ -88,6 +88,9 @@ This layer provides the management & monitoring functions for the platform. Each
 * Solace will be used for Realtime integration with other enterpise system and it will be bridged with Azure Event Hub 
 * Azure Data Factory will be used for all Batch integrations
 
+#### Data Model
+***
+
 ### Deployment Architecture
 ![Deployment Architecture](CMP_Deployment_View.png)
 
