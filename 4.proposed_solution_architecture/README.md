@@ -108,17 +108,18 @@ This layer provides the management & monitoring functions for the platform. Each
 ### Security Architecture
 ![Security Architecture](CMP_Security_View.png)
 
+* Security at Rest will be enabled on all the data repository like Azure Cosmos, Azure PostgreSQL, ADLS
+* Security in Transit will be enabled using TLS
+* Microsoft Entra Identity (formerly Azure Active Directory) serves as the central identity management system for users, service principals, and security groups.
 * The Azure Web Application Firewall (WAF) and the Enterprise Firewall within the Cloud Shared Service provide protection for incoming and outgoing traffic.
 * Traffic to and from every Virtual Network (VNet) is routed through the Cloud Shared Service VNet, specifically via the Enterprise Firewall.
 * Azure Network Watcher and Log Analytics enhance security monitoring by integrating network traffic logs with other log data to identify potential security incidents or breaches.
-* Microsoft Entra Identity (formerly Azure Active Directory) serves as the central identity management system for users, service principals, and security groups.
 * All APIs are secured using OAuth and are made available through the Azure Application Gateway, which includes a Web Application Firewall (WAF).
 * Only essential ports are open to Azure Platform services such as EventHub and CosmosDB, and these are further safeguarded with client IP filtering and Security Groups in the firewall.
 * Azure Virtual Networks and subnets are employed to provide logical isolation for all workloads.
 * Azure Private Link is utilized for secure access to Software as a Service (SaaS) offerings like Solace and Snowflake.
 * Azure Key Vault is implemented for the storage and management of security keys
-* Security at Rest will be enabled on all the data repository like Azure Cosmos, Azure PostgreSQL, ADLS
-* Security in Transit will be enabled using TLS 
+
 
 ### Technical Stack
 
@@ -161,5 +162,6 @@ This layer provides the management & monitoring functions for the platform. Each
 * New solution will follow the current monitoring and observability defined by enterprise.
 * Existing enterprise defined security standards will be followed by the new solution e.g. Zero Trust Policy
 * Payment processing and refunds will be handled by an existing system in the landscape.
+* Enterprise Knowledge Management has ability to expose the content via proper interface for training in Open AI 
 
 
