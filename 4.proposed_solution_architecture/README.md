@@ -77,60 +77,42 @@ This layer provides the management & monitoring functions for the platform. Each
 ### Architecture Context
 ![Architecture Context](CMP_System_Context_View.png)
 
-# Customer Management Platform (CMP) as System of Record for Customer Profiles
-
-## Overview
 The **Customer Management Platform (CMP)** will serve as the central repository for all customer profile information, integrating and enhancing data from multiple sources to provide a holistic view of the customer.
 
-## Data Sources and Integration
-The CMP will aggregate and enrich customer profiles using data from the following sources:
-
+The CMP will aggregate and enrich customer profiles using data from key following sources like:
 - **Order Management System**: 
   - Customer Orders
   - Ancillary services and preferences
-
 - **Booking Engine**: 
   - Search and booking logs
-
 - **Flight Reservation System**: 
   - Booking transactions
   - Special Service Requests (SSRs)
   - Ancillaries, preferences, and orders
-
 - **Loyalty Platform**: 
   - Loyalty profiles and preferences
-
 - **Social and Third-Party Platforms**: 
   - Additional enhancements to customer profiles
-
 - **Customer IDP (Identity Provider)**: 
   - Essential for linking and merging customer profiles
-
 - **Contact Center System**: 
   - Customer interactions via Interactive Voice Response (IVR) systems
-
 - **Operational Systems**: 
   - Catering, airport operations, lounges, and chauffeur services (including car and child seat preferences)
-
 - **In-Flight Retail System**: 
   - Customer purchases during flights
-
 - **Onboard Crew System & Meal Order System**: 
   - Meal orders and cases
-
 - **Baggage System**: 
   - Baggage status
-
 - **Check-In System**: 
   - Check-in transactions, including ancillaries, preferences, and orders (seat selection, extra baggage, upgrades, etc.)
 
-## Centralization and Accessibility
+#### Centralization and Accessibility
 - The CMP will act as the **single source of truth**, providing a 360-degree view of customer information to other systems.
 - Customer interactions will remain with the existing channels like the Contact Center and Booking Engine.
-- **Customer Identity Management**: 
-  - Managed centrally in one IDP (Okta).
-- **Employee & Partners Identity Management**: 
-  - Managed in a separate central IDP (Azure AD).
+- Customer Identity is managed in one central IDP (Okta) and Employee & Partners Identity in one central IDP (Azure AD) 
+
 
 
 ### Container Diagram
