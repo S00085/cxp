@@ -152,6 +152,16 @@ This layer provides the management & monitoring functions for the platform. Each
 | LLM | Azure Open AI |
 | Connectivity to OnPremise | Azure Express route |
 
+### Key fitness functions 
+
+|  |   |
+| ------- | --- |
+| Customer Profile Request per second | ***|
+| Customer Profile update events | ***|
+|  | ***|
+
+
+
 ## Key Assumptions & Constraints
 
 * Most of the Key operations systems can publish the requried events in realtime
