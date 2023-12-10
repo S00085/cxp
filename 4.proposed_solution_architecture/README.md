@@ -1,14 +1,41 @@
 # Proposed Solution Architecture
 The proposed solution architecture for CMP is organized around Architecture views and diagrams. Each view may be composed of one or more diagrams illustrating a specific area from a specific perspective.
 
-
-## Architecture Vision
-
-blah blah
-
 ## Guiding Principles
 
-blah blah...
+The following are key guiding principles for the proposed Architecture 
+
+### General Architecture
+
+| Principle                         | Rationale                                                    | Implications                                                 |
+| :-------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| Simplicity | Simpler Architecture leads to simpler and well understood systems.| Development, implementation & maintenance of simpler systems is less expensive, in both time and other resources compared to complex systems|
+| Abstraction | The use of abstraction allows design to be independent of the physical aspects of the system | Easier to understand and more flexible to implement & maintain|
+| Modular               | Modular design enables components/services to be improved/replaced with ease. | Components/services can be tested/deployed with minimal business disruption. Improved availability and reliability. |
+| Resilient | Resilient design ensure that the system is highly available and fault tolerant. For e.g no single part of a system can stop the entire from working| System components are designed & implemented with Failure-is-the-norm mindset along with necessary validation and enforcement engineering processes in place|
+| Open & Standards based | Adopting Open standards & specifications where applicable enables a flexible and open system which allows future evolution| Avoids vendor lock-in, allows evolution and improves maintainability |
+| Pattern based architecture        | Industry well recognised/proven pattern based architectures will improve re-usability | Less effort to build and maintain systems                    |
+| Compliant with law and regulation | All solutions must be law-abiding and compile with rules and guidance from regulatory bodies | Rules of the road, just follow them!                         |
+
+### Integration
+
+| Principle                                        | Rationale                               | Implications                                                 |
+| :----------------------------------------------- | :-------------------------------------- | :----------------------------------------------------------- |
+| API first approach | API first approach ensures that the internal capabilities of a subsystem or service is open for evolution | Subsytems concepts and abstractions should be well thought out and meaningful for consuming applications / clients |
+| Event Orientation | Reduces temporal dependencies between services which improves availability, reliability & extensibility characteristics of the system| All system components should publish relevent business and system events without worrying about which part of the system is consuming them| 
+
+### Security
+
+| Principle         | Rationale                                                    | Implications                                      |
+| :---------------- | :----------------------------------------------------------- | :------------------------------------------------ |
+| Zero Trust Architecture | Adopting Zero Trust design principles reduces the attach surface of the system and risk of data breach| Zero trust security principle implies that systems are designed with granular access controls and expects subjects to explicitly state the scope of acess required and do only what is applicable for the scope of access. |
+| Secure from Start | Security is not a after thought. Security built into system and process design will provides more security for valuable business data. | Secured and protected organisation in digital era |
+
+### Data
+| Principle         | Rationale                                                    | Implications                                      |
+| :---------------- | :----------------------------------------------------------- | :------------------------------------------------ |
+| Data Quality | High quality data helps build accurate customer profiles and allows effective personalization features to be built| This principle implies that the design of system and features should be designed around reliable and high quality data feeds and events to provide effective personalization features |
+|Data Governance | Effective Data governance allows data to be tracked from its original source through its journey till it has been processed and disposed off| Personal data of customers need to be designed with data governance and tools in mind aligning to the capability within the organization handling the customer data|
 
 ## Architecture Styles & Patterns
 
