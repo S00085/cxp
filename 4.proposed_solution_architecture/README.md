@@ -119,6 +119,78 @@ The CMP will aggregate and enrich customer profiles using data from key followin
 ### Container Diagram
 ![Container Diagram](CMP_C4_Container_View.png)
 
+#### Auto Case Creation with recommended resolution for call centre team 
+![Interaction Diagram](CMP_AutoCase_flow.png)
+
+1. A Baggage Mishandling Event is published on the Solace Enterprise Messaging Platform.
+2. This event is then relayed from Solace to the Azure Event Hub.
+3. Journey Orchestration Service monitors and responds to the Baggage Mishandling Event.
+4. This service activates a process orchestration in response to the event.
+5. It acquires potential solutions from a machine learning service via Open API, which utilizes a Knowledge Base for training. Additionally, it aggregates extra data from other enterprise systems.
+6. A new case, including a proposed resolution, is generated in the case management system and assigned either to the Call Center or a specific individual for further actions.
+7. The Customer 360 service updates the customer relationship database with the new case reference.
+8. Customers are informed about their case based on set rules if needed
+9. The Stream Processing Engine may also distribute information about the Baggage Mishandling Event, derived from the baggage system notifications and flight status, like instances where there is no baggage update for a customer and the flight has departed.
+
+#### Auto compensation flow
+![Interaction Diagram](CMP_AutoCompensation_flow.png)
+
+1. Events related to operational disruptions, such as Flight Cancellations or Flight Status Updates, along with customer-specific incidents like Baggage Mishandling, are disseminated on the Solace Enterprise Messaging Platform.
+2. Operational distruptions event are then relayed from Solace to the Azure Event Hub
+3. The Journey Orchestration Service subscribe to operational disruption events, like Flight Cancellations and Flight Status Updates, as well as customer-specific events like Baggage Mishandling.
+4. The Journey Orchestration Service gathers necessary customer information from the Customer 360 service and other enterprise applications.
+5. The Orchestration Service Engine utilizes a rule engine to determine appropriate compensation details.
+6. A case is created for manual approval if deemed necessary.
+7. The Journey Orchestration Service publish compensation information, such as Complimentary Tickets, Meal Vouchers, or Additional Loyalty Miles.
+8. Relevant systems subscribed to these events on the Solace Enterprise Messaging Platform, like the Lounge System and Notification System, respond by providing the respective compensations, such as Meal Vouchers, and informing customers about these compensations.
+
+#### IVR Call flow 
+![Interaction Diagram](CMP_IVRCall_flow.png)
+
+1. When a customer call is received on the Call Center platform, an IVR (Interactive Voice Response) Calling Event is published, including essential details like the customer's phone number and information about the assigned agent.
+2. This IVR Calling Event is then relayed from Solace to the Azure Event Hub
+3. The Customer 360 Service listens for the IVR Calling Event and retrieves customer details based on the phone number.
+4. The Customer 360 Service then sends a notification to load the customer profile through a websocket. In response, the CMP (Customer Management Platform) web application loads the Customer 360 profile along with additional information such as cases and offers pertinent to the calling customer.
+
+#### Unified Customer 360 profile flow 
+![Interaction Diagram](CMP_Customer360_flow.png)
+
+1. Various customer-related data and events are distributed through the Solace Enterprise Messaging Platform. This includes information from:
+- Order Management System: Customer Orders, Ancillaries, Preferences
+- Booking Engine: Search and Booking Logs
+- Flight Reservation System: Booking Transactions, Special Service Requests (SSR), Ancillaries, Preferences, Orders
+- Loyalty Platform: Loyalty Profiles and Preferences
+- Social Platforms and Third Parties: Enhanced Customer Profiles
+- Customer IDP: Identity Data for Profile Linking/Merging
+- Contact Center System: Customer IVR (Interactive Voice Response) Interactions
+- Other Operational Systems: Catering, Airport Operations, Lounge, Chauffeur Preferences (e.g., Car Type, Child Seat)
+- In-flight Retail System: Customer Purchases
+- Onboard Crew System & Meal Order System: Meal Orders and Cases
+- Baggage System: Baggage Status Updates
+- Check-In System: Check-in Transactions, Ancillaries, Preferences, Orders (e.g., Seat Selection, Extra Baggage, Upgrades)
+2. Customer events are then transferred from Solace to the Azure Event Hub.
+3. Large-scale updates to customer profiles are managed in batches using Azure Data Factory and integrated into the Customer 360 Database.
+4. Operational events, such as Flight Movements, are directly monitored by the Customer 360 Service.
+5. Events that require stream processing, like security screening delays, are processed and channeled through Azure Stream Analytics.
+6. Events that need both batch stream processing and machine learning analysis are processed and relayed via Azure Databricks.
+7. Customer profile synchronization, including merging and deduplication from the EDP (Enterprise Data Platform), is performed using Azure Databricks.
+8. The Customer 360 Profile and Preferences API is made accessible to external systems, such as in-flight systems, via an API gateway.
+9. Batch requirements for Customer 360 Profiles and Preferences, like sharing anonymized customer data with partners, are handled by Azure Data Factory.
+
+#### Consent Management flow
+![Interaction Diagram](CMP_ConsentMgmt_flow.png)
+
+1. An API for retrieving and updating customer consent is made available through an API gateway. This allows external channels to access and modify consent information, Same API is accessible to CMP webapp as well. 
+2. Changes to customer consent, such as revocation, are handled by the Consent Management Service, which then broadcasts these updates to Solace.
+3. Applications that hold customer data are configured to subscribe to and act upon these Consent Change Events as they occur.
+
+#### Data Analysis flow 
+![Interaction Diagram](CMP_DataAnalysis_flow.png)
+
+1. A variety of customer-related data and events are disseminated through the Solace Enterprise Messaging Platform.
+2. These customer events are then relayed from Solace to the Azure Event Hub.
+3. The processed customer data is transmitted from the Event Hub to both ADLS (Azure Data Lake Storage) and Apache Druid for real-time analytics.
+4. The Reporting Service, such as Power BI, accesses Apache Druid for near real-time reporting and connects to Snowflake for more in-depth analytical purposes.
 
 ### Information Architecture
 ![Information Architecture](CMP_Information_flow.png)
