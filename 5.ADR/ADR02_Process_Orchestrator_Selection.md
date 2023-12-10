@@ -1,4 +1,4 @@
-# [short title of solved problem and solution]
+# Process Orchestrator Selection to extend Journey Orchestrator
 
 * Status: Accepted 
 * Date: [2023-12-10 ]
@@ -10,7 +10,7 @@ For orchestrating customer journeys, we will use a Journey Orchestrator Microser
 
 ## Decision Drivers
 
-* Usabilty 
+* Usabilty targeting non techinical user
 * Cost optimal solution 
 * Strong Community Support 
 
@@ -18,19 +18,6 @@ For orchestrating customer journeys, we will use a Journey Orchestrator Microser
 
 Some of the widely recognized process orchestration engines are: Camunda, JBoss jBPM, Kestra , Apache Airflow, AWS Step Functions Microsoft Power Automate, IBM Business Process Manager, Pega BPM etc 
 In our context of Customer Management platform due to cost contraints IBM Business Process Manager is excluded
-
-
-## Decision Outcome
-
-**Why Choose Camunda:**
-
-- **Comprehensive BPMN Support**: Industry-standard modeling for workflow and decision automation.
-- **Flexibility and Integration**: Adaptable for various business needs, strong in Java-based ecosystems.
-- **User-Friendly Interface**: Accessible for both technical and non-technical users.
-- **Scalability**: Efficient in handling complex workflows.
-- **Strong Community and Documentation**: Easier implementation and long-term support.
-
-**Use Case Suitability**: Ideal for scenarios requiring detailed workflow modeling and a balance between technical control and user-friendliness. Its capability in complex decision automation processes makes it a strong choice for streamlining and automating multifaceted business processes.
 
 ## Pros and Cons of the Options 
 
@@ -75,3 +62,82 @@ In our context of Customer Management platform due to cost contraints IBM Busine
 - **User Interface**: User-friendly, low-code.
 - **Use Cases**: Office automation, simple integrations.
 - **Community and Support**: Microsoft support.
+
+## Shorlist Outcome
+
+ Due to User-friendlines Camunda & Microsoft Power Automate is shorlisted for further detailed analysis 
+
+ # Detailed Comparison: Camunda vs Microsoft Power Automate
+
+An in-depth look at the features, integration capabilities, usability, and organizational suitability of Camunda and Microsoft Power Automate.
+
+## Option #1 - Camunda 
+
+### Functionality
+- Comprehensive support for BPMN, CMMN, and DMN.
+- Ideal for complex workflow automation and decision-making processes.
+- Wide-ranging capabilities in business process modeling and execution.
+
+### Integration
+- Strong in Java-based environments.
+- Embeddable in existing applications or usable as a standalone.
+
+### User Interface
+- Robust modeler for designing workflows.
+- More technical interface, offering extensive control.
+
+### Scalability
+- Highly scalable for both small and large enterprises.
+- Capable of handling complex and high-volume processes.
+
+### Use Cases
+- Suited for detailed process modeling and automation.
+- Applicable in industries with complex workflows.
+
+### Community and Support
+- Strong community, extensive documentation, and professional support.
+
+## Option #2 - Microsoft Power Automate
+
+### Functionality
+- Low-code platform for automating routine tasks.
+- Strong in workflows between Microsoft and third-party services.
+- Less suited for complex process modeling.
+
+### Integration
+- Excellent with Microsoft 365 and various third-party apps.
+- Focus on office automation and simple integrations.
+
+### User Interface
+- User-friendly, designed for non-technical users.
+- Drag-and-drop interface for quick workflow creation.
+
+### Scalability
+- Suitable for small to medium-sized processes.
+- May struggle with very complex/high-volume workflows.
+
+### Use Cases
+- Ideal for automating office tasks and simple integrations.
+- Preferred for ease of use and quick deployment scenarios.
+
+### Community and Support
+- Backed by Microsoft’s support network and documentation.
+
+## Decision Outcome
+
+### Why Choose Camunda
+
+- **Advanced Process Modeling**: Superior BPMN, CMMN, and DMN support for detailed and complex process modeling.
+
+- **Technical Control and Integration**: Greater technical control and better integration, especially in Java-based ecosystems.
+
+- **Scalability**: Excellently suited for complex and high-volume workflows.
+
+- **Versatility in Use Cases**: Appropriate for a range of industries with complex workflows and decision automation.
+
+- **Strong Community and Professional Support**: Ensures long-term viability and ease of troubleshooting.
+
+Camunda is preferred over Microsoft Power Automate for the need of sophisticated business process management, scalability, and technical depth.
+
+
+
