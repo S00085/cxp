@@ -6,7 +6,7 @@
 
 ## Context and Problem Statement
 
-Problem is to select appropriate database for case management repositoty : RDBM and Document DB  
+Problem is to select appropriate database for case management repository : RDBM and Document DB  
 
 ## Considered Options
 
