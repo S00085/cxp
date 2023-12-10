@@ -128,7 +128,7 @@ This layer provides the management & monitoring functions for the platform. Each
 |  | Technical Stack  |
 | ------- | --- |
 | Front End | React JS 18.x , Webpack 5 (Microfront End )|
-| Back End | Spring Boot 3, JDK 17 |
+| Back End | Spring Boot 3 (Reactive), JDK 17 |
 | API Gateway | Azure APIM |
 | Container orchestration | Azure Kubernetes Service |
 | Database / Repository | Azure Cosmos (Graph) for Customer Profile, Azure Cosmos (Mongo) for Case Management, Azure PostgreSQL for Process Model, ADLS for Raw Data Storage, Elastic search for Orcherstation Engine, Minio for Files |
