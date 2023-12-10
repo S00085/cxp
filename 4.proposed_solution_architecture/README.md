@@ -115,8 +115,10 @@ The CMP will aggregate and enrich customer profiles using data from key followin
 
 
 
+
 ### Container Diagram
 ![Container Diagram](CMP_C4_Container_View.png)
+
 
 ### Information Architecture
 ![Information Architecture](CMP_Information_flow.png)
