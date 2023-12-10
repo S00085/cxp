@@ -152,18 +152,13 @@ This layer provides the management & monitoring functions for the platform. Each
 | LLM | Azure Open AI |
 | Connectivity to OnPremise | Azure Express route |
 
-### Key Non Functional Requirements 
+### Key Non-Functional Requirements 
 
 |  |   |
 | ------- | --- |
 | Availablity % | ***|
 |  | ***|
 |  | ***|
-
-### Key fitness functions 
-
-|  |   |
-| ------- | --- |
 | Customer Profile Request per second | ***|
 | Customer Profile update events | ***|
 |  | ***|
