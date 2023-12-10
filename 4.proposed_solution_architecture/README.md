@@ -147,7 +147,7 @@ This layer provides the management & monitoring functions for the platform. Each
 | Authentication and Authorisation | Microsoft Entra ID to be used for authentication using MSAL for React and Spring Azure  |
 | Cache  | Azure Redis Cache |
 | CDN | Azure CDN |
-| Neywork | Azure Frontdoor |
+| Network Routing | Azure Frontdoor |
 | DNS | Azure DNS |
 | LLM | Azure Open AI |
 | Connectivity to OnPremise | Azure Express route |
