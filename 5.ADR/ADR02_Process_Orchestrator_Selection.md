@@ -1,4 +1,4 @@
-# Process Orchestrator Selection to extend Journey Orchestrator
+# Process Orchestrator Selection to extend Journey Orchestrator Capability
 
 * Status: Accepted 
 * Date: [2023-12-10 ]
