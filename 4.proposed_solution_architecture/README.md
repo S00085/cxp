@@ -104,6 +104,7 @@ This layer provides the management & monitoring functions for the platform. Each
 * Azure ExpressRoute will be used for secure, reliable connectivity to on-premise data centers.
 
 
+
 ### Security Architecture
 ![Security Architecture](CMP_Security_View.png)
 
@@ -116,6 +117,8 @@ This layer provides the management & monitoring functions for the platform. Each
 * Azure Virtual Networks and subnets are employed to provide logical isolation for all workloads.
 * Azure Private Link is utilized for secure access to Software as a Service (SaaS) offerings like Solace and Snowflake.
 * Azure Key Vault is implemented for the storage and management of security keys
+* Security at Rest will be enabled on all the data repository like Azure Cosmos, Azure PostgreSQL, ADLS
+* Security in Transit will be enabled using TLS 
 
 ### Technical Stack
 
