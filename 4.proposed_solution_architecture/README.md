@@ -84,7 +84,7 @@ The CMP will aggregate and enrich customer profiles using data from key followin
   - Customer Orders
   - Ancillary services and preferences
 - **Booking Engine**: 
-  - Search and booking logs
+  - Search and booking logs e.g. to send potential offers to resume booking
 - **Flight Reservation System**: 
   - Booking transactions
   - Special Service Requests (SSRs)
@@ -92,7 +92,7 @@ The CMP will aggregate and enrich customer profiles using data from key followin
 - **Loyalty Platform**: 
   - Loyalty profiles and preferences
 - **Social and Third-Party Platforms**: 
-  - Additional enhancements to customer profiles
+  - Additional enhancements to customer profiles for hyperpersonalisation 
 - **Customer IDP (Identity Provider)**: 
   - Essential for linking and merging customer profiles
 - **Contact Center System**: 
@@ -102,7 +102,7 @@ The CMP will aggregate and enrich customer profiles using data from key followin
 - **In-Flight Retail System**: 
   - Customer purchases during flights
 - **Onboard Crew System & Meal Order System**: 
-  - Meal orders and cases
+  - Meal orders and cases created onboard 
 - **Baggage System**: 
   - Baggage status
 - **Check-In System**: 
