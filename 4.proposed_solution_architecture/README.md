@@ -72,6 +72,33 @@ This layer provides the management & monitoring functions for the platform. Each
 * Azure Private Link is utilized for secure access to Software as a Service (SaaS) offerings like Solace and Snowflake.
 * Azure Key Vault is implemented for the storage and management of security keys
 
+### Technical Stack
+
+|  | Technical Stack  |
+| ------- | --- |
+| Front End | React JS 18.x , Webpack 5 (Microfront End )|
+| Back End | Spring Boot 3, JDK 17 |
+| API Gateway | Azure APIM |
+| Container orchestration | Azure Kubernetes Service |
+| Database / Repository | Azure Cosmos (Graph) for Customer Profile, Azure Cosmos (Mongo) for Case Management, Azure PostgreSQL for Process Model, ADLS for Raw Data Storage, Elastic search for Orcherstation Engine, Minio for Files |
+| Event Streaming | Azure Event Hub |
+| Stream Processing | Azure Stream Analytics |
+| Stream Batch Processing & ML | Azure DataBricks |
+| Realtime Analytics | Apache Druid |
+| GraphQL Engine | Hasura |
+| Reporting Service | Power BI |
+| Data Warehouse | Snowflake |
+| Integration Platform | Solace (Realtime e.g. Events from Onpremise Enterprise application), Azure Data Factory (All Batch integrations), Azure APIM (on Demand Interface e.g. Consent Service, Customer 360 Service) |
+| Logging | Splunk (SIEM), Log Analytics workspace |
+| Tracing | -Micrometer Tracing |
+| Authentication and Authorisation | Microsoft Entra ID to be used for authentication using MSAL for React and Spring Azure  |
+| Cache  | Azure Redis Cache |
+| CDN | Azure CDN |
+| Neywork | Azure Frontdoor |
+| DNS | Azure DNS |
+| LLM | Azure Open AI |
+| Connectivity to OnPremise | Azure Express route |
+
 ## Key Assumptions & Constraints
 
 * Most of the Key operations systems can publish the requried events in realtime
