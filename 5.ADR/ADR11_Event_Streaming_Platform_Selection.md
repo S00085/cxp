@@ -1,4 +1,4 @@
-# [short title of solved problem and solution]
+# Stream processing engine selection for Customer Management Platform
 
 * Status: Accepted
 * Date: 2023-12-10
