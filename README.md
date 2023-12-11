@@ -17,7 +17,6 @@ Below are the team members of Visioneers
 - [Stakeholder concerns & Expectations](1.context_and_motivation/README.md#stakeholder-concerns--expectations)
 - [Current state - Key challenges](1.context_and_motivation/README.md#current-state-key-challenges)
 - [Business Goals, Drivers & Key requirements](1.context_and_motivation/README.md#business-goals)
-- [Key Assumptions & Constraints](1.context_and_motivation/README.md#key-assumptions--constraints)
 
 [Architecture Analysis](2.architecture_analysis/README.md#architecture-analysis)
 - [Expected Quality Attributes](2.architecture_analysis/README.md#expected-quality-attributes)
