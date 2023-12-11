@@ -1,5 +1,5 @@
 [> Home](../README.md)
-[< Prev](../1.context_and_motivation/README.md)  |  [Next >](../3.solution_architecture/README.md)
+| [< Prev](../1.context_and_motivation/README.md)  |  [Next >](../3.solution_architecture/README.md)
 
 ---
 
