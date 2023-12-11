@@ -355,11 +355,13 @@ This layer provides the management & monitoring functions for the platform. Each
 | Recovery Point Objective  across region | Nill (for key critical core components like customer 360 service) , < 1 Minute Non components like Process Modeler |
 | Max. number of unplanned outages in a year | 2 | 
 | Mean Time between failures | 6 Months | 
-| Customer Profile Request from other channels | 1000 TPS  ****|
-| Customer Profile update events |  1000 TPS ****|
-| Customer 360 Profile Page Request | 100 TPS ****|
-| Case Management views | 100 TPS ****|
-| Case Management create/updates | 10 TPS ****|
+| Customer Profile update events (All Channels including Direct, Service channels & Partners)|  400 TPS |
+| Customer Profile API Requests from channels & CMP UI| 500 TPS|
+| Customer 360 Profile Page Request from CMP UI| 25 TPS |
+| Case Management views from CMP UI| 5 TPS |
+| Case Management create/updates from CMP & UI| 4 TPS |
+| Case Management API requests | 7 TPS |
+| Case Management create/updates API requests | 5 TPS |
 
 ## Key Assumptions & Constraints
 
