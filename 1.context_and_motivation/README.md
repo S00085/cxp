@@ -1,3 +1,8 @@
+[> Home](../README.md)
+| [Next >](../2.architecture_analysis/README.md)
+
+---
+
 # Context & Motivation
 Gamma airways is a rapidly growing Airline based in the Europe. It flies to over 130 destinations worldwide and is looking to expand its operations further. 
 Due to the digital age and growing demands from customer's for a brands presence through digital channels, it is striving hard to improve the customer experience to generate more revenue, enhance customer satisfaction and to increase customer retention. However it is facing the below challenges and problems in the current state from a business perspective
@@ -64,3 +69,8 @@ Below are the key challenges observed in the Current state
 5. Advanced analytics & AI capabilities to improve customer Experience
 6. Hyper personalisation and feedback loop mechanism from social media **
 7. Automation / Manage operations by exceptions **
+
+---
+[> Home](../README.md)
+| [Next >](../2.architecture_analysis/README.md)
+

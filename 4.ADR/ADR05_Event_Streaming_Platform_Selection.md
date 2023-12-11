@@ -1,3 +1,8 @@
+
+[< Back](../3.solution_architecture/README.md)
+
+---
+
 # Stream processing engine selection for Customer Management Platform
 
 * Status: Accepted
@@ -80,3 +85,7 @@ For a unified customer management platform in Azure, **Azure Stream Analytics** 
 ## Related Decision 
 
 **Azure Event Hub** will be used since **Azure Stream Analytics** and **Databricks** has seamless integration capabilities with **Azure Event Hub** and also one of Azure managed service which simplifies the deployment
+
+---
+
+[< Back](../3.solution_architecture/README.md)

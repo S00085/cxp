@@ -1,3 +1,7 @@
+
+[< Back](../3.solution_architecture/README.md)
+
+---
 # Deployment_strategy - Azure Functions vs AKS vs ACI
 
 * Status: Accepted
@@ -64,3 +68,7 @@ Decision influenced by the following factors
 * Avoid vendor dependency.
 * Ease of integrations with existing on-premise applications and legacy systems.
 * Ease of testability and maintenance
+
+---
+
+[< Back](../3.solution_architecture/README.md)

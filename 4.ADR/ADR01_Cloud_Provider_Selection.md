@@ -1,3 +1,8 @@
+
+[< Back](../3.solution_architecture/README.md)
+
+---
+
 # Cloud Provider - Azure vs AWS vs OnPremises
 
 * Status: Accepted
@@ -70,3 +75,8 @@ Selection of the Cloud provider for hosting the Customer Management platform.
 * **Data Science** - Manage End to End analytics workloads and advantage to have close integration with data bricks, the Azure data warehouse provides optimal performance in the cloud.
 * **Integration** - Application integration with Microsoft components like Microsoft Entra ID, OpenAI and Power BI Analytics.
 * **Cost**: In terms of cost, Azure is less expensive than AWS and OnPremises based on application deployable components.
+
+---
+
+[< Back](../3.solution_architecture/README.md)
+

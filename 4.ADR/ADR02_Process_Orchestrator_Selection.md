@@ -1,3 +1,7 @@
+
+[< Back](../3.solution_architecture/README.md)
+
+---
 # Process Orchestrator Selection to extend Journey Orchestrator Capability
 
 * Status: Accepted
@@ -139,3 +143,6 @@ Camunda is preferred over Microsoft Power Automate for the need of sophisticated
 ### Reference 
 https://camunda.com/blog/2014/01/benchmarking-camunda-process-engine/
 
+---
+
+[< Back](../3.solution_architecture/README.md)

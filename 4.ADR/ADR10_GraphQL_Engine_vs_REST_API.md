@@ -1,3 +1,8 @@
+
+[< Back](../3.solution_architecture/README.md)
+
+---
+
 # GraphQL Engine VS REST API
 
 * Status: Accepted
@@ -47,4 +52,6 @@ Decision influenced by the following factors
 * Flexible nature of GraphQL,  changes on the client-side can be made without any extra work on the server. Since clients can specify their exact data requirements, no backend engineer needs to make adjustments when the design and data needs on the frontend change.
 * Ability to provide different responses for channel interactions/partner interactions for the same endpoint.
 
+---
 
+[< Back](../3.solution_architecture/README.md)
