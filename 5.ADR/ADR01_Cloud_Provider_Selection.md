@@ -1,4 +1,4 @@
-# ADR01_Cloud Provider - Azure vs AWS vs OnPremises
+# Cloud Provider - Azure vs AWS vs OnPremises
 
 * Status: Proposed
 * Date:  07-12-2023
