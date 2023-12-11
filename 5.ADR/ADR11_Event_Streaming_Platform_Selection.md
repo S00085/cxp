@@ -1,62 +1,82 @@
 # [short title of solved problem and solution]
 
-* Status: [proposed | rejected | accepted | deprecated | … | superseded by [ADR-0005]
-* Date: [YYYY-MM-DD when the decision was last updated] <!-- optional -->
-
+* Status: Accepted
+* Date: 2023-12-10
 
 ## Context and Problem Statement
 
-[Describe the context and problem statement, e.g., in free form using two to three sentences. You may want to articulate the problem in form of a question.]
+Stream processing engine is required for building the customer 360 profile and building all the required relationships and also react to complex events patterns from various other operational system
 
-## Decision Drivers <!-- optional -->
+## Decision Drivers
 
-* [driver 1, e.g., a force, facing concern, …]
-* [driver 2, e.g., a force, facing concern, …]
-* … <!-- numbers of drivers can vary -->
-
+* Application being deployed on Azure
+* Immediate insights required using key operational events like baggage handling
+* Complex event processing and machine learning with larger data set 
+  
 ## Considered Options
 
-* [option 1]
-* [option 2]
-* [option 3]
-* … <!-- numbers of options can vary -->
+Below stream processing platforms are considered for 360/unified customer management stream processing use case 
+* Azure Stream Analytics
+* Confluent CEP
+* AWS Kinesis Firehose
+* Databricks 
+
+## Pros and Cons of the Options
+
+## Integration with Azure Ecosystem
+- **Azure Stream Analytics**
+  - Seamless integration with Azure services.
+- **Confluent CEP**
+  - Can integrate with Azure but requires additional setup.
+- **AWS Kinesis Firehose**
+  - Designed for AWS; complex integration with Azure.
+- **Databricks**
+  - Strong integration with Azure services.
+
+## Performance and Scalability
+- **Azure Stream Analytics**
+  - High performance for real-time analytics.
+- **Confluent CEP**
+  - High throughput and scalability, Kafka-based.
+- **AWS Kinesis Firehose**
+  - High-throughput but best within AWS.
+- **Databricks**
+  - Excellent for big data processing and complex analytics.
+
+## Ease of Use and Maintenance
+- **Azure Stream Analytics**
+  - User-friendly, especially with SQL knowledge.
+- **Confluent CEP**
+  - More complex setup and management.
+- **AWS Kinesis Firehose**
+  - More suited to AWS environments.
+- **Databricks**
+  - Easy-to-use interface, suitable for data scientists.
+
+## Cost
+- **Azure Stream Analytics**
+  - Cost-effective for Azure-based applications.
+- **Confluent CEP**
+  - Costs vary based on cluster size and resources.
+- **AWS Kinesis Firehose**
+  - Charges for data ingested; additional costs in Azure.
+- **Databricks**
+  - Based on Databricks units consumed.
+
+## Specific Use Cases
+- **Azure Stream Analytics**
+  - Ideal for real-time analytics and quick insights.
+- **Confluent CEP**
+  - Suited for high-volume event streaming and complex event processing.
+- **AWS Kinesis Firehose**
+  - Efficient for data streaming within AWS ecosystem.
+- **Databricks**
+  - Great for complex analytics, big data processing, and machine learning.
 
 ## Decision Outcome
 
-Chosen option: "[option 1]", because [justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force force | … | comes out best (see below)].
+For a unified customer management platform in Azure, **Azure Stream Analytics** and **Databricks** are recommended for their integration with Azure, ease of use, and specific strengths in streaming and data processing. Confluent CEP is a strong option for Kafka-based systems, while AWS Kinesis Firehose may be less suitable due to its AWS-centric design.
 
-### Implications / Consequences (both +ve & -ve) <!-- optional -->
+## Related Decision 
 
-## Pros and Cons of the Options <!-- optional -->
-
-### [option 1]
-
-[example | description | pointer to more information | …] <!-- optional -->
-
-* Good, because [argument a]
-* Good, because [argument b]
-* Bad, because [argument c]
-* … <!-- numbers of pros and cons can vary -->
-
-### [option 2]
-
-[example | description | pointer to more information | …] <!-- optional -->
-
-* Good, because [argument a]
-* Good, because [argument b]
-* Bad, because [argument c]
-* … <!-- numbers of pros and cons can vary -->
-
-### [option 3]
-
-[example | description | pointer to more information | …] <!-- optional -->
-
-* Good, because [argument a]
-* Good, because [argument b]
-* Bad, because [argument c]
-* … <!-- numbers of pros and cons can vary -->
-
-## Links <!-- optional -->
-
-* [Link type] [Link to ADR] <!-- example: Refined by [ADR-0005](0005-example.md) -->
-* … <!-- numbers of links can vary -->
+**Azure Event Hub** will be used since **Azure Stream Analytics** and **Databricks** has seamless integration capabilities with **Azure Event Hub** and also one of Azure managed service which simplifies the deployment
