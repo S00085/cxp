@@ -1,4 +1,4 @@
-# ADR03_Customer Profile Database Selection - Graph DB vs RDBMS vs Document DB)
+# Customer Profile Database Selection - Graph DB vs RDBMS vs Document DB)
 
 * Status: Proposed
 * Date:  06-12-2023

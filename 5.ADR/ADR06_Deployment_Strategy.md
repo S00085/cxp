@@ -1,4 +1,4 @@
-# ADR06_Deployment_strategy
+# Deployment_strategy
 
 * Status: Proposed
 * Date:  06-12-2023

@@ -125,8 +125,6 @@ An in-depth look at the features, integration capabilities, usability, and organ
 
 ## Decision Outcome
 
-### Why Choose Camunda
-
 - **Advanced Process Modeling**: Superior BPMN, CMMN, and DMN support for detailed and complex process modeling.
 
 - **Technical Control and Integration**: Greater technical control and better integration, especially in Java-based ecosystems.
@@ -137,7 +135,8 @@ An in-depth look at the features, integration capabilities, usability, and organ
 
 - **Strong Community and Professional Support**: Ensures long-term viability and ease of troubleshooting.
 
-Camunda is preferred over Microsoft Power Automate for the need of sophisticated business process management, scalability, and technical depth.
+Camunda is preferred over Microsoft Power Automate for the need of sophisticated business process management, scalability, and technical depth and also provide deployment portability to any cloud providers. 
 
-
+### Reference 
+https://camunda.com/blog/2014/01/benchmarking-camunda-process-engine/
 

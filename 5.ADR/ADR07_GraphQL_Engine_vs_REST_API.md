@@ -1,4 +1,4 @@
-# ADR07_GraphQL Engine VS REST API
+# GraphQL Engine VS REST API
 * Status: Proposed
 * Date:  06-12-2023
 

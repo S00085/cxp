@@ -1,4 +1,4 @@
-# ADR04_Graph database - Azure Cosmos for Apache Gremlin vs Neo4j
+# Graph database Selection - Azure Cosmos for Apache Gremlin vs Neo4j
 
 * Status: Proposed
 * Date:  06-12-2023
