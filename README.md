@@ -41,21 +41,17 @@ Below are the team members of Visioneers
     - [Key Interaction Flows](3.solution_architecture/README.md#key-interaction-flows)
       - [Unified Customer 360 profile flow](3.solution_architecture/README.md#unified-customer-360-profile-flow)
       - [Auto Case Creation with recommended resolution for call centre team](3.solution_architecture/README.md#auto-case-creation-with-recommended-resolution-for-call-centre-team)
-      - [IVR Call flow]
-      - [Auto compensation flow]
-      - [Consent Management flow]
-      - [Data Analysis flow]
-    - [Information Architecture] 
-    - [Data Model]
-    - [Deployment Architecture]
-    - [Logical View]
-    - [Security Architecture]
-  - [Technology Stack]
-[Architecture Decision Records]
-
-[References]
-
-[Summary & Conclusion]
+      - [IVR Call flow](3.solution_architecture/README.md#ivr-call-flow)
+      - [Auto compensation flow](3.solution_architecture/README.md#auto-compensation-flow)
+      - [Consent Management flow](3.solution_architecture/README.md#consent-management-flow)
+      - [Data Analysis flow](3.solution_architecture/README.md#data-analysis-flow)
+    - [Information Architecture](3.solution_architecture/README.md#information-architecture)
+    - [Data Model](3.solution_architecture/README.md#data-model)
+    - [Deployment Architecture](3.solution_architecture/README.md#deployment-architecture)
+    - [Logical View](3.solution_architecture/README.md#logical-view)
+    - [Security Architecture](3.solution_architecture/README.md#security-architecture)
+  - [Technology Stack](3.solution_architecture/README.md#technical-stack)
+[Architecture Decision Records](3.solution_architecture/README.md#architecture-decision-records-adrs)
 
 
 
