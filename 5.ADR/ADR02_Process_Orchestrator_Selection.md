@@ -125,8 +125,6 @@ An in-depth look at the features, integration capabilities, usability, and organ
 
 ## Decision Outcome
 
-### Why Choose Camunda
-
 - **Advanced Process Modeling**: Superior BPMN, CMMN, and DMN support for detailed and complex process modeling.
 
 - **Technical Control and Integration**: Greater technical control and better integration, especially in Java-based ecosystems.
