@@ -21,36 +21,36 @@ Below are the team members of Visioneers
 - [Business Goals, Drivers & Key requirements](1.context_and_motivation/README.md#business-goals)
 - [Key Assumptions & Constraints](1.context_and_motivation/README.md#key-assumptions--constraints)
 
-[Architecture Analysis](2.architecture_analysis/README.md)
+[Architecture Analysis](2.architecture_analysis/README.md#architecture-analysis)
+- [Expected Quality Attributes](2.architecture_analysis/README.md#expected-quality-attributes)
 
-- [Target Solution - Key Architecture characteristics](2.architecture_analysis/target_solution_key_architecture_characteristics.md)
-- [Expected Quality Attributes](2.architecture_analysis/expected_quality_attributes.md)
-
-[Solution Overview](3.solution_overview/README.md)
-
-- [Key capabilities of proposed solution](3.solution_overview/README.md#key-capabilities-of-proposed-solution)
-- [Benefits of Proposed solution](3.solution_overview/README.md#benefits-of-proposed-solution)
-- [Innovations](3.solution_overview/README.md#innovations)
-
-[Proposed Solution Architecture]
-- [Architecture Vision]
-- [Guiding Principles]
-- [Architecture Styles & Patterns]
-- [Architecture Views & Perspectives]
-  - [Logical View]
-    - [Key Components]
-  - [System Context View]
-  - [System Container View(s)]
-  - [Deployment View]
-    - [Technology Stack]
-  - [Integration View]
-  - [Security View]
-  - [Information Architecture]
-  - [Use-case Interactions]
-- [Benefits & Trade-offs of Proposed Architecture / Alternate solutions]
-- [Technology Decisions & Rationale]
-- [Roadmap & Implementation Guidance]
-
+[Solution Architecture]
+- [Solution Overview](3.solution_architecture/README.md#solution-overview)
+  - [Key Assumptions & Constraints](3.solution_architecture/README.md#key-assumptions--constraints)
+  - [Key capabilities of proposed solution](3.solution_architecture/README.md#key-capabilities-of-proposed-solution)
+- [Proposed Solution Architecture](3.solution_architecture/README.md#proposed-solution-architecture)
+  - [Guiding Principles](3.solution_architecture/README.md#guiding-principles)
+    - [General Architecture](3.solution_architecture/README.md#general-architecture)
+    - [Integration](3.solution_architecture/README.md#integration)
+    - [Security](3.solution_architecture/README.md#security)
+    - [Data](3.solution_architecture/README.md#data)
+  - [Architecture Styles & Patterns]
+  - [Architecture Views]
+    - [Architecture Context]
+    - [Container Diagram]
+    - [Key Interaction Flows]
+      - [Unified Customer 360 profile flow]
+      - [Auto Case Creation with recommended resolution for call centre team]
+      - [IVR Call flow]
+      - [Auto compensation flow]
+      - [Consent Management flow]
+      - [Data Analysis flow]
+    - [Information Architecture] 
+    - [Data Model]
+    - [Deployment Architecture]
+    - [Logical View]
+    - [Security Architecture]
+  - [Technology Stack]
 [Architecture Decision Records]
 
 [References]
