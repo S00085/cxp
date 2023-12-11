@@ -137,7 +137,7 @@ An in-depth look at the features, integration capabilities, usability, and organ
 
 - **Strong Community and Professional Support**: Ensures long-term viability and ease of troubleshooting.
 
-Camunda is preferred over Microsoft Power Automate for the need of sophisticated business process management, scalability, and technical depth.
+Camunda is preferred over Microsoft Power Automate for the need of sophisticated business process management, scalability, and technical depth and also provide deployment portability to any cloud providers. 
 
 
 
