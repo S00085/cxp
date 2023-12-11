@@ -1,7 +1,7 @@
 # Deployment_strategy - Azure Functions vs AKS vs ACI
 
-* Status: Proposed
-* Date:  06-12-2023
+* Status: Accepted
+* Date:  07-12-2023
 
 ## Context and Problem Statement
 

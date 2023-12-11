@@ -1,7 +1,7 @@
 # Stream processing engine selection for Customer Management Platform
 
 * Status: Accepted
-* Date: 2023-12-10
+* Date:  07-12-2023
 
 ## Context and Problem Statement
 

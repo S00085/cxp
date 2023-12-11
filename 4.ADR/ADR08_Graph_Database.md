@@ -1,7 +1,7 @@
 # Graph database Selection - Azure Cosmos for Apache Gremlin vs Neo4j
 
-* Status: Proposed
-* Date:  06-12-2023
+* Status: Accepted
+* Date:  07-12-2023
 
 ## Context and Problem Statement
 

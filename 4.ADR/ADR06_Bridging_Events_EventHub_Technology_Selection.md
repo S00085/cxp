@@ -1,8 +1,7 @@
 # Bridging Events from On-Prem systems to CMP EventHub
 
 * Status: Accepted
-* Date: 2023-12-04 
-
+* Date:  07-12-2023
 
 ## Context and Problem Statement
 
