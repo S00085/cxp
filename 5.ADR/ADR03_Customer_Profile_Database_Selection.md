@@ -1,4 +1,4 @@
-# ADR03_Customer Profile Database Selection - Graph DB vs RDBMS vs Document DB)
+# Customer Profile Database Selection - Graph DB vs RDBMS vs Document DB)
 
 * Status: Proposed
 * Date:  06-12-2023
@@ -19,16 +19,6 @@ Selection of the right type of database from Graph DB, RDBMS and Document DB.
 * Graph database
 * Relational database (RDBMS)
 * Document database
-
-## Decision Outcome
-
-* Chosen option - Graph database
-
-Decision influenced by the following factors
-* Customer 360 database ill hold customer details along with its relationship with various entities.
-* Graph database is having better performance than RDBMS even when the volume and depth of relationship increases.
-* Flexibility to save records as Nodes and its relationship as Edges, with no need to perform any advance modelling.
-* Better performance in data traversal.
 
 ## Pros and Cons of the Options
 
@@ -55,3 +45,13 @@ Decision influenced by the following factors
 * Good, highly flexible - Document databases are highly flexible and can adapt to changes in data schemas, as they do not enforce the consistency rules.
 * Good, Cost effective - Document databases can scale horizontally across multiple commodity servers.
 * Bad, Document database are not used to handle relational data.
+
+## Decision Outcome
+
+* Chosen option - Graph database
+
+Decision influenced by the following factors
+* Customer 360 database ill hold customer details along with its relationship with various entities.
+* Graph database is having better performance than RDBMS even when the volume and depth of relationship increases.
+* Flexibility to save records as Nodes and its relationship as Edges, with no need to perform any advance modelling.
+* Better performance in data traversal.

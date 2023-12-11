@@ -1,4 +1,4 @@
-# ADR06_Deployment_strategy
+# Deployment_strategy
 
 * Status: Proposed
 * Date:  06-12-2023
@@ -21,15 +21,6 @@ There are multiple options we could take into consideration as deployment platfo
 * Serverless - Azure functions
 * Container orchestration services - Azure Kubernetes Service (AKS)
 * Container services - Azure Container Instances (ACI)
-
-## Decision Outcome
-
-Chosen option: Container services - Azure Kubernetes Service (AKS).
-
-Decision influenced by the following factors
-* Avoid vendor dependency.
-* Integrations with existing on-premise applications and legacy systems.
-* Ease of testability and maintenance
 
 ## Pros and Cons of the Options
 
@@ -64,3 +55,12 @@ Decision influenced by the following factors
 * Bad, slower startup and slower scale out compared to Azure functions.
 * Bad, ACI requires a manual installation and configuration of a monitoring solution.
 * Bad, in a container-based architecture, the number of containers deployed is determined by the developer in advance
+
+## Decision Outcome
+
+Chosen option: Container services - Azure Kubernetes Service (AKS).
+
+Decision influenced by the following factors
+* Avoid vendor dependency.
+* Ease of integrations with existing on-premise applications and legacy systems.
+* Ease of testability and maintenance

@@ -92,7 +92,8 @@ This recommendation aligns with the need for a database that is adaptable, effic
 ## Why Choose a Azure Cosmos DB Mongo API (Related Decision)
 
 - Application is hosted in Azure 
-- Application already use Azure Cosmos (Graph) DB for Customer Profile  
+- Application already use Azure Cosmos (Graph) DB for Customer Profile
+- Simplify the deplyment as it is managed platform service from Azure  
 - Azure Cosmos DB is recommended for the case management system due to its scalability, global distribution capabilities, and flexibility in handling diverse data models. Its performance and cost-effectiveness make it a strong candidate for systems that require rapid access to large volumes of varied data types, especially in a globally distributed context.
 - This recommendation aligns with the need for a robust, scalable, and flexible database solution, positioning Azure Cosmos DB as the preferred choice over Azure SQL Database (RDBMS) for the case management system in question.
 - Cosmos DB’s multi-model capability allows it to handle various types of data, making it highly suitable for a case management system where data can be structured, semi-structured, or unstructured.

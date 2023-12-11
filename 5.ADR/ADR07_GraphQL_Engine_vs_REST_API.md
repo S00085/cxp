@@ -1,4 +1,4 @@
-# ADR07_GraphQL Engine VS REST API
+# GraphQL Engine VS REST API
 * Status: Proposed
 * Date:  06-12-2023
 
@@ -16,16 +16,6 @@ Choice of REST API vs GraphQL engine.
 
 * GraphQL
 * REST API
-
-## Decision Outcome
-
-* Chosen option - GraphQL
-
-Decision influenced by the following factors
-* More flexible and efficient than REST APIs
-* Better operational efficiency - no more underfetching and overfetching.
-* Flexible nature of GraphQL,  changes on the client-side can be made without any extra work on the server. Since clients can specify their exact data requirements, no backend engineer needs to make adjustments when the design and data needs on the frontend change.
-* Ability to provide different responses for channel interactions/partner interactions for the same endpoint.
 
 ## Pros and Cons of the Options
 
@@ -46,6 +36,14 @@ Decision influenced by the following factors
 * Bad, REST data is weakly typed. So the client must decide how to interpret the formatted data when it is returned.
 * With REST, the client must check if the returned data is valid.
 
+## Decision Outcome
 
+* Chosen option - GraphQL
+
+Decision influenced by the following factors
+* More flexible and efficient than REST APIs
+* Better operational efficiency - no more underfetching and overfetching.
+* Flexible nature of GraphQL,  changes on the client-side can be made without any extra work on the server. Since clients can specify their exact data requirements, no backend engineer needs to make adjustments when the design and data needs on the frontend change.
+* Ability to provide different responses for channel interactions/partner interactions for the same endpoint.
 
 
