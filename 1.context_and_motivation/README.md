@@ -12,7 +12,7 @@ Due to the digital age and growing demands from customer's for a brands presence
 
 Given the current state & global regulatory constraints related to Collection, handling and disposing of Customer Personal data, the airline is looking to do the below to address the Customers & Service agent concerns .
 
-1. Provide a personalized service to its customers at all its touchpoints (channels of interaction both digital & in-person)
+1. Provide a personalized service to its customers at all its touchpoints (channels of interaction both digital & service touchpoints)
 2. Empower the Service agents to delight the Customers by providing a real-time 360 degree view of customer they are serving with Intelligent decision support capability. 
 
 ## Problem Brief
@@ -20,12 +20,12 @@ To achieve its goal of improving the Customer experience and delighting its cust
 
 ![Business Vision](Customer_Mgmt_Platform_Arch_Katas-CMP_Business_Vision.svg)
 
-The vision is to create a comprehensive intelligent Customer Management Platform (CMP) which enables the foundation of a data-driven Customer centric organization. This platform will enable to manage customer information across all interaction channels (both digital & service channels) and which provides the below high level capabilities
+The vision is to create a comprehensive intelligent Customer Management Platform (CMP) which enables the foundation of a data-driven Customer centric organization. This platform will enable centralized management of customer information across all interaction channels (both digital & service channels). The CMP is also envisioned to provide the below high level capabilities
 
 1. Unified Customer Profiles
 2. Hyper personalisation 
 3. Real time view of the Customer Journey
-4. Automation at centre for enhanced operations and customer experience
+4. Automation for enhanced operations and customer experience
 5. Intelligent & context aware recommendations to enable personalized interaction with Customers
 
 ## Stakeholder Concerns & Expectations
@@ -41,7 +41,9 @@ Below are the key stakeholders concerns and their expectations from the newly en
 | Partners & Service Providers | - Anonymized customer profile & segmentation |
 | Data Analyst | - Self-service analytics to unearth fresh customer insights |
 | Customer affairs & complaints| - Automated Case & compensation management on operational disruptions <br/> - Near real time alerts on operational disruption events|
-| Data Privacy Office | - Centralized consent management aligning to Data Privacy regulation by region <br/> - Reliable and accurate view of Personal information stored, processed & shared to partners <br/> - Ability to support personal data consent revocations by Customers|    
+| Data Privacy Office | - Centralized consent management aligning to Data Privacy regulation by region <br/> - Reliable and accurate view of Personal information stored, processed & shared to partners <br/> - Ability to support personal data consent revocations by Customers|
+
+In addition to the above, Marketing, Loyalty, Catering, Service delivery etc. also have similar expectations of a unified customer profile with preferences, choices & enhanced customer insights   
 
 ## Current state key challenges
 Below are the key challenges observed in the Current state
@@ -65,8 +67,8 @@ Below are the key challenges observed in the Current state
 3. Capability to share profile data with strategic partners while preserving anonymity in compliance with privacy regulations.
 4. Real time data processing and analysis to provide timely insights
 5. Advanced analytics & AI capabilities to improve customer Experience
-6. Hyper personalisation and feedback loop mechanism from social media **
-7. Automation / Manage operations by exceptions **
+6. Hyper personalisation and feedback loop mechanism from social media
+7. Automation / Manage operations by exceptions
 
 ---
 [> Home](../README.md)
