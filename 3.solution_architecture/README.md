@@ -97,7 +97,7 @@ The key architectural styles and patterns used in the proposed architecture are
 ## Architecture Views
 
 ### Architecture Context
-![Architecture Context](CMP_System_Context_View.svg)
+![Architecture Context](CMP_System_Context_View.png)
 
 The **Customer Management Platform (CMP)** will serve as the central repository for all customer profile information, integrating and enhancing data from multiple sources to provide a holistic view of the customer.
 
@@ -264,7 +264,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 4. The Reporting Service, such as Power BI, accesses Apache Druid for near real-time reporting and connects to Snowflake for more in-depth analytical purposes.
 
 ### Information Architecture
-![Information Architecture](CMP_Information_flow.svg)
+![Information Architecture](CMP_Information_flow.png)
 
 * “System of Record” for Customer profile information will be Customer Management Platform, sourcing information various customer touchpoints/systems
 * Customer Profile and preference one view will be shown in CMP as well as exposed as API via API gateway
@@ -275,7 +275,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 ***
 
 ### Deployment Architecture
-![Deployment Architecture](CMP_Deployment_View.svg)
+![Deployment Architecture](CMP_Deployment_View.png)
 
 * The new system will be deployed on Microsoft's Azure cloud platform. We will leverage Azure Platform Services like Azure Kubernetes Service and Azure Postgres which are independent of the Azure-specific environment to avoid vendor locking
 * The application will be available in multiple regions, with the primary region being selected based on proximity to the operational area. Within each region, the application will be distributed across multipe Availability Zones for enhanced resilience.
@@ -317,7 +317,7 @@ This layer provides the management & monitoring functions for the platform. Each
 
 
 ### Security Architecture
-![Security Architecture](CMP_Security_View.svg)
+![Security Architecture](CMP_Security_View.png)
 
 * Security at Rest will be enabled on all the data repository like Azure Cosmos, Azure PostgreSQL, ADLS
 * Security in Transit will be enabled using TLS
