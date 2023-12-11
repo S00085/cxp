@@ -21,7 +21,7 @@ For orchestrating customer journeys, we will use a Journey Orchestrator Microser
 ## Considered Options
 
 Some of the widely recognized process orchestration engines are: Camunda, JBoss jBPM, Kestra , Apache Airflow, AWS Step Functions Microsoft Power Automate, IBM Business Process Manager, Pega BPM etc 
-In our context of Customer Management platform due to cost contraints IBM Business Process Manager is excluded
+In our context of Customer Management platform due to cost constraints IBM Business Process Manager is excluded
 
 ## Pros and Cons of the Options 
 
@@ -80,7 +80,7 @@ An in-depth look at the features, integration capabilities, usability, and organ
 ### Functionality
 - Comprehensive support for BPMN, CMMN, and DMN.
 - Ideal for complex workflow automation and decision-making processes.
-- Wide-ranging capabilities in business process modeling and execution.
+- Wide-ranging capabilities in business process modelling and execution.
 
 ### Integration
 - Strong in Java-based environments.
@@ -95,7 +95,7 @@ An in-depth look at the features, integration capabilities, usability, and organ
 - Capable of handling complex and high-volume processes.
 
 ### Use Cases
-- Suited for detailed process modeling and automation.
+- Suited for detailed process modelling and automation.
 - Applicable in industries with complex workflows.
 
 ### Community and Support
@@ -106,7 +106,7 @@ An in-depth look at the features, integration capabilities, usability, and organ
 ### Functionality
 - Low-code platform for automating routine tasks.
 - Strong in workflows between Microsoft and third-party services.
-- Less suited for complex process modeling.
+- Less suited for complex process modelling.
 
 ### Integration
 - Excellent with Microsoft 365 and various third-party apps.
@@ -129,7 +129,7 @@ An in-depth look at the features, integration capabilities, usability, and organ
 
 ## Decision Outcome
 
-- **Advanced Process Modeling**: Superior BPMN, CMMN, and DMN support for detailed and complex process modeling.
+- **Advanced Process Modelling**: Superior BPMN, CMMN, and DMN support for detailed and complex process modelling.
 
 - **Technical Control and Integration**: Greater technical control and better integration, especially in Java-based ecosystems.
 

@@ -34,13 +34,13 @@ In this approach the CMP needs to keep track of the consent information across a
 |---|---|
 | Consent information in CMP is always in synch with the operational systems| Tight coupling since the operational systems need to be available whenever CMP updates the consent |
 | | This approach makes the CMP more complex and dependent on the availability of the Operational systems|
-| | Since conflict resoultion is CMP's responsibility, Operational system specific concerns seep into CMP which impacts flexibility & maintainability in the long run|
+| | Since conflict resolution is CMP's responsibility, Operational system specific concerns seep into CMP which impacts flexibility & maintainability in the long run|
 | | All the operational systems need to expose the APIs for CMP to consume|
 
 ### [Asynchronous Event driven approach]
 
 
-In this approach the CMP is responsible only for capturing consent changes and publishing the necessary events. The operational systems are expected to subscribe for the relevent events and react accordingly. 
+In this approach the CMP is responsible only for capturing consent changes and publishing the necessary events. The operational systems are expected to subscribe for the relevant  events and react accordingly. 
 
 | Pros | Cons |
 |---|---|
@@ -50,7 +50,7 @@ In this approach the CMP is responsible only for capturing consent changes and p
 
 ## Decision Outcome
 
-Chosen option: "[Asynchronous Event driven approach]", because the approach allows loose coupling with the CMP & the exiting operational systems. This approach also has comparatively high availability & scalabilty characteristics. 
+Chosen option: "[Asynchronous Event driven approach]", because the approach allows loose coupling with the CMP & the exiting operational systems. This approach also has comparatively high availability & scalability characteristics. 
 
 ### Implications / Consequences (both +ve & -ve) <!-- optional -->
 Below are the key implications of this decision

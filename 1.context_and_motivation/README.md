@@ -16,7 +16,7 @@ Given the current state & global regulatory constraints related to Collection, h
 2. Empower the Service agents to delight the Customers by providing a real-time 360 degree view of customer they are serving with Intelligent decision support capability. 
 
 ## Problem Brief
-In order to achieve its goal of improving the Customer experience and delighting its customers, Gamma airways senior management forumulated the below business vision.
+To achieve its goal of improving the Customer experience and delighting its customers, Gamma airways senior management formulated the below business vision.
 
 ![Business Vision](Customer_Mgmt_Platform_Arch_Katas-CMP_Business_Vision.svg)
 
@@ -25,11 +25,11 @@ The vision is to create a comprehensive intelligent Customer Management Platform
 1. Unified Customer Profiles
 2. Hyper personalisation 
 3. Real time view of the Customer Journey
-4. Automation at center for enhanced operations and customer experience
+4. Automation at centre for enhanced operations and customer experience
 5. Intelligent & context aware recommendations to enable personalized interaction with Customers
 
 ## Stakeholder Concerns & Expectations
-Below are the key stakeholders concerns and their expections from the newly envisioned Customer Management Platform (CMP)
+Below are the key stakeholders concerns and their expectations from the newly envisioned Customer Management Platform (CMP)
 
 
 | Stakeholder | Concerns & Expectations |

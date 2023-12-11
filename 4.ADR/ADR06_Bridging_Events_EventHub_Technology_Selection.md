@@ -11,11 +11,11 @@
 
 ## Context and Problem Statement
 
-The CMP solution expects the all the events to be published to the Azure Event Hub. However the event sources are a mix of on-premise hosted & saas solutions. There needs to be an approach to have these event source publish to CMP and react to events from CMP in a consistent way.
+The CMP solution expects the all the events to be published to the Azure Event Hub. However the event sources are a mix of on-premise hosted & SaaS solutions. There needs to be an approach to have these event source publish to CMP and react to events from CMP in a consistent way.
 
 ## Decision Drivers <!-- optional -->
 
-* Existing Eventing infrastructure on-premise & saas
+* Existing Eventing infrastructure on-premise & SaaS
 * Scalability
 * Interoperability
 
@@ -29,7 +29,7 @@ The CMP solution expects the all the events to be published to the Azure Event H
 
 ### Event Bridging from Enterprise Message Broker to Azure Event Hub
 
-In This approach, the events from the on-premise systems & saas solutions are published to Solace PubSub+ cloud solution which are then bridged to Azure EventHub through the Solace Azure Event Hub connector. 
+In This approach, the events from the on-premise systems & SaaS solutions are published to Solace PubSub+ cloud solution which are then bridged to Azure EventHub through the Solace Azure Event Hub connector. 
 
 | Pros | Cons |
 |---|---|
@@ -40,12 +40,12 @@ In This approach, the events from the on-premise systems & saas solutions are pu
 
 | Pros | Cons |
 |---|---|
-| No intermediary, events are directly published to Azure Event hub| Scale of change is high since existing systems need to change including on-premise & saas solutions |
+| No intermediary, events are directly published to Azure Event hub| Scale of change is high since existing systems need to change including on-premise & SaaS solutions |
 ||Existing systems become coupled to Event hub and CMP and technology changes at this layer impact existing systems|
 
 ## Decision Outcome
 
-Chosen option: "Event Bridging from Enterprise Message Broker to Azure Event Hub", because this option reduces the scale of change in the existing on-premise & saas solutions as well as provides a consistent scalable approach to integrate new Event sources across on-premise & saas solutions.
+Chosen option: "Event Bridging from Enterprise Message Broker to Azure Event Hub", because this option reduces the scale of change in the existing on-premise & SaaS solutions as well as provides a consistent scalable approach to integrate new Event sources across on-premise & SaaS solutions.
 
 ---
 

@@ -12,42 +12,42 @@ The CMP will provide the below key functions for the Airline
 
 - **Collect** customer related transactions, past journeys, interaction logs etc from Direct channels, Service channels, Airline transactional systems, Partner / service provider systems and other relevant systems
 - **Unify** the disparate customer profiles into a unified customer identity & profile along with past journeys, interactions etc. and serve as the single source of truth for a Customer 360 degree view.
-- **Protect** the customer personal / profile information by tracking the Customer consent, revocations across the entire Airline system landscape as well as provide data protection capabilities aligning with Regional Data privacy regulations related to handling, processing and disposing of customer personal data
+- **Protect** the customer personal / profile information by tracking the Customer consent, revocations across the entire Airline system landscape as well as provide data protection capabilities aligning with Regional Data privacy regulations related to handling, processing, and disposing of customer personal data
 - **Orchestrate** intelligent automated actions to provide a proactive and seamless digital experience for the Customers & Service Agents
 - **Publish** the unified Customer 360 degree view of the customer, real-time journey status as well as recommendations / actions for helping service channels to provide a personalized experience for the customers during their interactions
 
 ## Key Assumptions & Constraints
 
-* Most of the Key operations systems can publish the requried events in realtime
+* Most of the Key operations systems can publish the required events in real-time
 * Customer Identity is managed in one central IDP (Okta)
-* Customer Notification is managed through a central Notification Platform considering Corporate Communciation Standards
+* Customer Notification is managed through a central Notification Platform considering Corporate Communication Standards
 * Customer interactions will remain with the existing channels like Contact center, Booking Engine
-* Enterprise Data Platform will own the data cleansing and dedupliction of the customer profile sources from various system
-* DPO aggremement is available to capture & process social profile informaiton based on optional customer consent **
-* Existing systems could either be on-premise or on cloud.
+* Enterprise Data Platform will own the data cleansing and deduplication of the customer profile sources from various system
+* DPO agreement is available to capture & process social profile information based on optional customer consent **
+* Existing systems could either be on-premises or on cloud.
 * Consent management notification from Customer Management Platform is expected to be respected and processed by all the systems in the landscape 
-* New solution will be use existing enterprise logging solution
+* New solution will be using existing enterprise logging solution
 * New solution will follow the current monitoring and observability defined by enterprise.
-* Existing enterprise defined security standards will be followed by the new solution e.g. Zero Trust Policy
+* Existing enterprise defined security standards will be followed by the new solution e.g., Zero Trust Policy
 * Payment processing and refunds will be handled by an existing system in the landscape.
 * Enterprise Knowledge Management has ability to expose the content via proper interface for training in Open AI 
 
 
 ## Key capabilities of proposed solution
 
-The customer management platform (CMP) is envisioned to provide the below key capabilities for the Airline
+The customer management platform (CMP) is envisioned to provide the below key capabilities for the Airline.
 
 ### Customer Management
-The Customer Managment capability provides the core function of building and exposing a unified customer profile along with a near real-time 360 degree view of their preferences, choices, journey status, feedback / complaints. This capability also provides the necessary contextual recommended next steps / actions for Customer service agents to provide a personalized experience for the customer during their interactions. The consents provided by the customers through the various interaction channels (Direct & Service) and necessary revocation capabilities are some of the other key features provided by this capability.
+The Customer Management capability provides the core function of building and exposing a unified customer profile along with a near real-time 360 degree view of their preferences, choices, journey status, feedback / complaints. This capability also provides the necessary contextual recommended next steps / actions for Customer service agents to provide a personalized experience for the customer during their interactions. The consents provided by the customers through the various interaction channels (Direct & Service) and necessary revocation capabilities are some of the other key features provided by this capability.
 
 ### Case Management
-The CMP also provides the ability to create, amend & resolve Cases which are raised through out the customer journey. This capability provides the ability for the airline to Design & implement complex workflow & rules driven case flows within the Customer centric organization
+The CMP also provides the ability to create, amend & resolve Cases which are raised throughout the customer journey. This capability provides the ability for the airline to Design & implement complex workflow & rules driven case flows within the Customer centric organization.
 
 ### Journey Orchestration
-The Journey orchestration capability provides the ability to intelligently and proactively orchestrate automated actions (compensation, raising cases etc) which are useful during disruption schenarios such as flight cancellation, baggage mishandling etc. 
+The Journey orchestration capability provides the ability to intelligently and proactively orchestrate automated actions (compensation, raising cases etc) which are useful during disruption scenarios such as flight cancellation, baggage mishandling etc. 
 
 ### Integrate & Publish
-The CMP allows integrating data (bulk & streaming) from the channels, backend transactional systems and partner systems to build a unified customer profile with past transactions, journey status using operational events etc. The Customer profile & other cusotmer insights gleaned from this data is exposed as APIs and events which can be consumed by Channels. The solution will also publish anonymized customer segment information for partners aligning to consent & regulatory constraints.
+The CMP allows integrating data (bulk & streaming) from the channels, backend transactional systems and partner systems to build a unified customer profile with past transactions, journey status using operational events etc. The Customer profile & other customer insights gleaned from this data is exposed as APIs and events which can be consumed by Channels. The solution will also publish anonymized customer segment information for partners aligning to consent & regulatory constraints.
 
 
 # Proposed Solution Architecture
@@ -55,7 +55,7 @@ The proposed solution architecture for CMP is organized around Architecture view
 
 ## Guiding Principles
 
-The following are key guiding principles for the proposed Architecture 
+The following are key guiding principles for the proposed Architecture.
 
 ### General Architecture
 
@@ -64,7 +64,7 @@ The following are key guiding principles for the proposed Architecture
 | Simplicity | Simpler Architecture leads to simpler and well understood systems.| Development, implementation & maintenance of simpler systems is less expensive, in both time and other resources compared to complex systems|
 | Abstraction | The use of abstraction allows design to be independent of the physical aspects of the system | Easier to understand and more flexible to implement & maintain|
 | Modular               | Modular design enables components/services to be improved/replaced with ease. | Components/services can be tested/deployed with minimal business disruption. Improved availability and reliability. |
-| Resilient | Resilient design ensure that the system is highly available and fault tolerant. For e.g no single part of a system can stop the entire from working| System components are designed & implemented with Failure-is-the-norm mindset along with necessary validation and enforcement engineering processes in place|
+| Resilient | Resilient design ensure that the system is highly available and fault tolerant. For e.g., no single part of a system can stop the entire from working| System components are designed & implemented with Failure-is-the-norm mindset along with necessary validation and enforcement engineering processes in place|
 | Open & Standards based | Adopting Open standards & specifications where applicable enables a flexible and open system which allows future evolution| Avoids vendor lock-in, allows evolution and improves maintainability |
 | Pattern based architecture        | Industry well recognised/proven pattern based architectures will improve re-usability | Less effort to build and maintain systems                    |
 | Compliant with law and regulation | All solutions must be law-abiding and compile with rules and guidance from regulatory bodies | Rules of the road, just follow them!                         |
@@ -73,21 +73,21 @@ The following are key guiding principles for the proposed Architecture
 
 | Principle                                        | Rationale                               | Implications                                                 |
 | :----------------------------------------------- | :-------------------------------------- | :----------------------------------------------------------- |
-| API first approach | API first approach ensures that the internal capabilities of a subsystem or service is open for evolution | Subsytems concepts and abstractions should be well thought out and meaningful for consuming applications / clients |
-| Event Orientation | Reduces temporal dependencies between services which improves availability, reliability & extensibility characteristics of the system| All system components should publish relevent business and system events without worrying about which part of the system is consuming them| 
+| API first approach | API first approach ensures that the internal capabilities of a subsystem or service is open for evolution | Subsystems concepts and abstractions should be well thought out and meaningful for consuming applications / clients |
+| Event Orientation | Reduces temporal dependencies between services which improves availability, reliability & extensibility characteristics of the system| All system components should publish relevant business and system events without worrying about which part of the system is consuming them| 
 
 ### Security
 
 | Principle         | Rationale                                                    | Implications                                      |
 | :---------------- | :----------------------------------------------------------- | :------------------------------------------------ |
-| Zero Trust Architecture | Adopting Zero Trust design principles reduces the attach surface of the system and risk of data breach| Zero trust security principle implies that systems are designed with granular access controls and expects subjects to explicitly state the scope of acess required and do only what is applicable for the scope of access. |
-| Secure from Start | Security is not a after thought. Security built into system and process design will provides more security for valuable business data. | Secured and protected organisation in digital era |
+| Zero Trust Architecture | Adopting Zero Trust design principles reduces the attach surface of the system and risk of data breach| Zero trust security principle implies that systems are designed with granular access controls and expects subjects to explicitly state the scope of access required and do only what is applicable for the scope of access. |
+| Secure from Start | Security is not a afterthought. Security built into system and process design will provides more security for valuable business data. | Secured and protected organisation in digital era |
 
 ### Data
 | Principle         | Rationale                                                    | Implications                                      |
 | :---------------- | :----------------------------------------------------------- | :------------------------------------------------ |
 | Data Quality | High quality data helps build accurate customer profiles and allows effective personalization features to be built| This principle implies that the design of system and features should be designed around reliable and high quality data feeds and events to provide effective personalization features |
-|Data Governance | Effective Data governance allows data to be tracked from its original source through its journey till it has been processed and disposed off| Personal data of customers need to be designed with data governance and tools in mind aligning to the capability within the organization handling the customer data|
+|Data Governance | Effective Data governance allows data to be tracked from its original source through its journey till it has been processed and disposed of| Personal data of customers need to be designed with data governance and tools in mind aligning to the capability within the organization handling the customer data|
 
 ## Architecture Styles & Patterns
 The key architectural styles and patterns used in the proposed architecture are 
@@ -96,7 +96,7 @@ The key architectural styles and patterns used in the proposed architecture are
 |---|---|---|
 | Microservices | A microservices architecture is a type of application architecture where the application is developed as a collection of services. It provides the framework to develop, deploy, and maintain microservices architecture diagrams and services independently. | Microservices allow a large application to be separated into smaller independent parts, with each part having its own realm of responsibility. To serve a single user request, a microservices-based application can call on many internal microservices to compose its response.|
 | Event Driven Architecture | An event-driven architecture uses events to trigger and communicate between decoupled services and is common in systems built with microservices. An event is a change in state, or an update, like an Flight departure or Baggage mishandled etc.| Event Driven architectures enable a loosely coupled system which improves availability, resilience, Fault tolerance & evolvability of a system |
-| Lambda Architecture |Lambda architecture is a data deployment model for processing that consists of a traditional batch data pipeline and a fast streaming data pipeline for handling real-time data. In addition to the batch layer and speed layers, Lambda architecture also includes a data serving layer for responding to user queries. This hybrid approach is designed to harness enormous volumes of rapidly created data, enabling businesses to make use of data more quickly | Existing customer transactional data could be amounting to tera or peta bytes which require batch processing. In addition the CMP usecase needs to react to operational events in near-realtime which require stream processing hence the Lambda Architecture is a good fit for the CMP for building a customer 360 degree view |
+| Lambda Architecture |Lambda architecture is a data deployment model for processing that consists of a traditional batch data pipeline and a fast streaming data pipeline for handling real-time data. In addition to the batch layer and speed layers, Lambda architecture also includes a data serving layer for responding to user queries. This hybrid approach is designed to harness enormous volumes of rapidly created data, enabling businesses to make use of data more quickly | Existing customer transactional data could be amounting to tera or peta bytes which require batch processing. In addition the CMP use case needs to react to operational events in near-realtime which require stream processing hence the Lambda Architecture is a good fit for the CMP for building a customer 360 degree view |
 | Reactive Architecture | Reactive architecture patterns are a set of design patterns that aim to build systems that are responsive, resilient, elastic, and message-driven.  | These patterns are particularly useful in distributed systems that deal with a large volume of data and high concurrency |
 
 ## Architecture Views
@@ -119,7 +119,7 @@ The CMP will aggregate and enrich customer profiles using data from key followin
 - **Loyalty Platform**: 
   - Loyalty profiles and preferences
 - **Social and Third-Party Platforms**: 
-  - Additional enhancements to customer profiles for hyperpersonalisation 
+  - Additional enhancements to customer profiles for hyper personalisation 
 - **Customer IDP (Identity Provider)**: 
   - Essential for linking and merging customer profiles
 - **Contact Center System**: 
@@ -151,35 +151,35 @@ The **Customer Management Platform (CMP)'s** core capability to build and expose
 Enterprise and partner systems can integrate with CMP with below capabilities:
 * **Realtime integration**: Source Systems can publish the events to and CMP portal will take action based on the events and also source systems can subscribe to events for the update customer 360 degree updates.
 * **Batch Processing**: Batch processing to collect customer specific information from Source systems or social media.
-* **API Gatway**: Exposing APIs to Source systems to fetch the customer profile and preferences.
+* **API Gateway**: Exposing APIs to Source systems to fetch the customer profile and preferences.
 
 #### Stream Processing and Data platform sync
-* Steam analytics and steam processing based on the incoming events and publish to journey orchestration or case management and also pulish back to source systems.
+* Steam analytics and steam processing based on the incoming events and publish to journey orchestration or case management and also publish back to source systems.
 * Customer profile sync with Enterprise data platform.
 * Using Apache Druid and Enterprise data platform reporting service for the real-time analytics.
 
 #### Customer Management Service
-* Journey orchestration service to handle events and perform orchestration and offload complex orchestration for the process ochestration.
-* Expose Customer 360 degree service to provide APIs by using graphQL servcie.
+* Journey orchestration service to handle events and perform orchestration and offload complex orchestration for the process orchestration.
+* Expose Customer 360 degree service to provide APIs by using graphQL service.
 * Consent management service to provide APIs to create/update/remove consent
 * Customer Profile and relationship Graph Database for storing the customer 360 degree information.
 * Cache to provide customer profile, preferences and consent in more faster way.
 
 #### Case Management Service
-* Exponse service to create, update and retreive case and communicate with case engine to trigger the workflow orchestrations.
+* Expose  service to create, update and retrieve case and communicate with case engine to trigger the workflow orchestrations.
 * Case management repository to store case related data.
 * Storage API and Object storage for storing files and object for case.
 * Client to connect with process orchestration to trigger the process orchestration.
 
-#### Process Orchestation
+#### Process Orchestration
 * Using Camunda out of the box solution for the complex process orchestrations.
 
 #### UI Layer
-* Customer management portal with microfronend capability:
+* Customer management portal with microfrontend capability:
   - Customer 360 view (Preferences, consent and relationships).
   - Case management functionalities.
 * Process management and Tasklist and Modeler UI from Camunda platform.
-* Power BI to serve reports and dashboars.
+* Power BI to serve reports and dashboards.
 * All APIs will be transit though API gateway (APIM).
 * Azure AD will be used for the User Authentication and authorization.
 
@@ -206,13 +206,13 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 3. Large-scale updates to customer profiles are managed in batches using Azure Data Factory and integrated into the Customer 360 Database.
 4. Operational events, such as Flight Movements, are directly monitored by the Customer 360 Service.
 5. Events that require stream processing, x number of repeated flight search attempts in last y hours from booking engine by customer to provide insights to call center agents through Azure Stream Analytics.
-6. Events that need complex analytics and machine learning on larger datasets are processed and relayed via Azure Databricks e.g. sentiment anaysis on top of customer interactions and update Customer 360 for call center agent view
+6. Events that need complex analytics and machine learning on larger datasets are processed and relayed via Azure Databricks e.g. sentiment analysis on top of customer interactions and update Customer 360 for call center agent view
 7. Customer profile synchronization, including merging and deduplication from the EDP (Enterprise Data Platform), is performed using Azure Databricks.
 8. The Customer 360 Profile and Preferences API is made accessible to external systems, such as in-flight systems, via an API gateway.
 9. Batch requirements for Customer 360 Profiles and Preferences, like sharing anonymized customer data with partners, are handled by Azure Data Factory.
 
 
-### Auto Case Creation with recommended resolution for call centre team 
+### Auto Case Creation with recommended resolution for call center team 
 ![Interaction Diagram](CMP_AutoCase_flow.svg)
 
 1. A Baggage Mishandling Event is published on the Solace Enterprise Messaging Platform.
@@ -223,7 +223,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 6. A new case, including a proposed resolution, is generated in the case management system and assigned either to the Call Center or a specific individual for further actions.
 7. The Customer 360 service updates the customer relationship database with the new case reference.
 8. Customers are informed about their case based on set rules if needed
-9. The Stream Processing Engine (Azure Stream Analytics) may also publish event about the Baggage Mishandling Event, derived from the baggage system notifications and flight status, like instances where there is no baggage update for a spaecific customer and the flight has departed.
+9. The Stream Processing Engine (Azure Stream Analytics) may also publish event about the Baggage Mishandling Event, derived from the baggage system notifications and flight status, like instances where there is no baggage update for a specific customer and the flight has departed.
 
 ### IVR Call flow 
 ![Interaction Diagram](CMP_IVRCall_flow.svg)
@@ -244,7 +244,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 ![Interaction Diagram](CMP_AutoCompensation_flow.svg)
 
 1. Events related to operational disruptions, such as Flight Cancellations or Flight Status Updates, along with customer-specific incidents like Baggage Mishandling, are disseminated on the Solace Enterprise Messaging Platform.
-2. Operational distruptions event are then relayed from Solace to the Azure Event Hub
+2. Operational disruption events are then relayed from Solace to the Azure Event Hub
 3. The Journey Orchestration Service subscribe to operational disruption events, like Flight Cancellations and Flight Status Updates, as well as customer-specific events like Baggage Mishandling.
 4. The Journey Orchestration Service gathers necessary customer information from the Customer 360 service and other enterprise applications.
 5. The Orchestration Service Engine utilizes a rule engine to determine appropriate compensation details.
@@ -273,7 +273,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 
 * “System of Record” for Customer profile information will be Customer Management Platform, sourcing information various customer touchpoints/systems
 * Customer Profile and preference one view will be shown in CMP as well as exposed as API via API gateway
-* Solace will be used for Realtime integration with other enterpise system and it will be bridged with Azure Event Hub 
+* Solace will be used for Realtime integration with other enterprise system and it will be bridged with Azure Event Hub 
 * Azure Data Factory will be used for all Batch integrations
 
 ### Data Model
@@ -289,14 +289,14 @@ Below representation is an indicative logical data model for Customer 360 graph.
 ![Deployment Architecture](CMP_Deployment_View.png)
 
 * The new system will be deployed on Microsoft's Azure cloud platform. We will leverage Azure Platform Services like Azure Kubernetes Service and Azure Postgres which are independent of the Azure-specific environment to avoid vendor locking
-* The application will be available in multiple regions, with the primary region being selected based on proximity to the operational area. Within each region, the application will be distributed across multipe Availability Zones for enhanced resilience.
+* The application will be available in multiple regions, with the primary region being selected based on proximity to the operational area. Within each region, the application will be distributed across multiple Availability Zones for enhanced resilience.
 * For orchestrating microservices, we will utilize Azure Kubernetes Service. These microservices will be developed using Spring Boot (Reactive Stack).
 * The Hasura GraphQL Engine will used.
 * To address caching needs across the application, Azure Redis Cache will be used.
 * For event streaming, Azure Event Hub is the chosen platform, complemented by Azure Stream Analytics to be used to handle real-time data processing, Azure Databricks will be used for complex analytics and machine learning on larger datasets.
 * For real-time analytics, Apache Druid is selected, and Power BI will be used for reporting, drawing data from Snowflake and Apache Druid.
 * For orchestrating customer journeys, we will use a Journey Orchestrator Microservice. Complex orchestrations requiring greater flexibility will be handled by the Camunda Process Orchestration Engine as extension to Journey Orchestrator Microservice.
-* Customer profiles, along with its relatioships such as bookings, flights, and baggage, will be stored in the Azure Cosmos graph DB.
+* Customer profiles, along with its relationships such as bookings, flights, and baggage, will be stored in the Azure Cosmos graph DB.
 * FormIO will serve as the case management form designer and Case data will be stored in Azure Cosmos DB with MongoDB API compatibility
 * Process Orchestration Engine will utilize Managed Elasticsearch. The process models for orchestration will be stored in a Managed PostgreSQL Database.
 * API security will be maintained using OAuth, with Azure Application Gateway, including a Web Application Firewall (WAF), managing API access. Solace will facilitate real-time integration with other enterprise systems, bridging with Azure Event Hub for this purpose. Azure Data Factory will handle all batch integrations.
@@ -351,7 +351,7 @@ This layer provides the management & monitoring functions for the platform. Each
 | Back End | Spring Boot 3 (Reactive), JDK 17 |
 | API Gateway | Azure APIM |
 | Container orchestration | Azure Kubernetes Service |
-| Database / Repository | Azure Cosmos (Graph) for Customer Profile, Azure Cosmos (Mongo) for Case Management, Azure PostgreSQL for Process Model, ADLS for Raw Data Storage, Elastic search for Orcherstation Engine, Minio for Files |
+| Database / Repository | Azure Cosmos (Graph) for Customer Profile, Azure Cosmos (Mongo) for Case Management, Azure PostgreSQL for Process Model, ADLS for Raw Data Storage, Elastic search for Orchestration Engine, Minio for Files |
 | Event Streaming | Azure Event Hub |
 | Stream Processing | Azure Stream Analytics |
 | Stream Batch Processing, complex analytics and machine learning | Azure DataBricks |
@@ -359,8 +359,8 @@ This layer provides the management & monitoring functions for the platform. Each
 | GraphQL Engine | Hasura |
 | Reporting Service | Power BI |
 | Data Warehouse | Snowflake |
-| Process Orcherstation Engine | Camunda |
-| Integration Platform | Solace (Realtime e.g. Events from Onpremise Enterprise application), Azure Data Factory (All Batch integrations), Azure APIM (on Demand Interface e.g. Consent Service, Customer 360 Service) |
+| Process Orchestration Engine | Camunda |
+| Integration Platform | Solace (Realtime e.g. Events from On-premises Enterprise application), Azure Data Factory (All Batch integrations), Azure APIM (on Demand Interface e.g. Consent Service, Customer 360 Service) |
 | Logging | Splunk (SIEM), Log Analytics workspace |
 | Application Performance Monitoring | Azure App Insights |
 | Tracing | Micrometer Tracing |

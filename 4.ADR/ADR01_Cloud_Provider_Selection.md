@@ -53,9 +53,9 @@ Selection of the Cloud provider for hosting the Customer Management platform.
 * **Availability** - AWS has a global infrastructure to provide high availability for cloud workloads, which includes 21 geographical zones each containing at least three availability zones.
 * **Affordability** - In comparison to other cloud service and managed platform providers, AWS is somewhat more costly than Azure.
 * **security** - AWS is architected to be the most secure global cloud infrastructure on which to build, migrate, and manage applications and workloads.
-* **Monitoring & observability** - AWS provided Full stack observability which includes AWS-native, APM and oper-source solutions. 
-    - Provide capability to collect, correlate, aggregate and anlyze telemetry of network, infrastructure and applications.
-* **Data Science & Analytics** - AWS also offers data analytics services such as AWS Snowball, direct connect, kinesis data firhose, Data Pipeline Glue, and so on, however it is difficult to handle end-to-end analytics workloads.
+* **Monitoring & observability** - AWS provided Full stack observability which includes AWS-native, APM and open-source solutions. 
+    - Provide capability to collect, correlate, aggregate and analyze telemetry of network, infrastructure and applications.
+* **Data Science & Analytics** - AWS also offers data analytics services such as AWS Snowball, direct connect, kinesis data firehose, Data Pipeline Glue, and so on, however it is difficult to handle end-to-end analytics workloads.
  
 
 ### On Premises
