@@ -125,28 +125,60 @@ The CMP will aggregate and enrich customer profiles using data from key followin
 ![Container Diagram](CMP_C4_Container_View.png)
 The **Customer Management Platform (CMP)'s** core capability to build and expose a unified customer profile with 360 degree view, consent management, Case management, Journey orchestration with process automation orchestration.
 
-## Integration
+#### Integration
 Enterprise and partner systems can integrate with CMP with below capabilities:
 * **Realtime integration**: Source Systems can publish the events to and CMP portal will take action based on the events and also source systems can subscribe to events for the update customer 360 degree updates.
 * **Batch Processing**: Batch processing to collect customer specific information from Source systems or social media.
 * **API Gatway**: Exposing APIs to Source systems to fetch the customer profile and preferences.
 
-#### Unified Customer 360 profile flow 
+#### Stream Processing and Data platform sync
+* Steam analytics and steam processing based on the incoming events and publish to journey orchestration or case management and also pulish back to source systems.
+* Customer profile sync with Enterprise data platform.
+* Using Apache Druid and Enterprise data platform reporting service for the real-time analytics.
+
+#### Customer Management Service
+* Journey orchestration service to handle events and perform orchestration and offload complex orchestration for the process ochestration.
+* Expose Customer 360 degree service to provide APIs by using graphQL servcie.
+* Consent management service to provide APIs to create/update/remove consent
+* Customer Profile and relationship Graph Database for storing the customer 360 degree information.
+* Cache to provide customer profile, preferences and consent in more faster way.
+
+#### Case Management Service
+* Exponse service to create, update and retreive case and communicate with case engine to trigger the workflow orchestrations.
+* Case management repository to store case related data.
+* Storage API and Object storage for storing files and object for case.
+* Client to connect with process orchestration to trigger the process orchestration.
+
+#### Process Orchestation
+* Using Camunda out of the box solution for the complex process orchestrations.
+
+#### UI Layer
+* Customer management portal with microfronend capability:
+  - Customer 360 view (Preferences, consent and relationships).
+  - Case management functionalities.
+* Process management and Tasklist and Modeler UI from Camunda platform.
+* Power BI to serve reports and dashboars.
+* All APIs will be transit though API gateway (APIM).
+
+
+
+
+### Unified Customer 360 profile flow 
 ![Interaction Diagram](CMP_Customer360_flow.png)
 
 1. Various customer-related data and events are distributed through the Solace Enterprise Messaging Platform. This includes information from:
-  - Order Management System: Customer Orders, Ancillaries, Preferences
-  - Booking Engine: Search and Booking Logs
-  - Flight Reservation System: Booking Transactions, Special Service Requests (SSR), Ancillaries, Preferences, Orders
-  - Loyalty Platform: Loyalty Profiles and Preferences
-  - Social Platforms and Third Parties: Enhanced Customer Profiles
-  - Customer IDP: Identity Data for Profile Linking/Merging
-  - Contact Center System: Customer IVR (Interactive Voice Response) Interactions
-  - Other Operational Systems: Catering, Airport Operations, Lounge, Chauffeur Preferences (e.g., Car Type, Child Seat)
-  - In-flight Retail System: Customer Purchases
-  - Onboard Crew System & Meal Order System: Meal Orders and Cases
-  - Baggage System: Baggage Status Updates
-  - Check-In System: Check-in Transactions, Ancillaries, Preferences, Orders (e.g., Seat Selection, Extra Baggage, Upgrades)
+    - Order Management System: Customer Orders, Ancillaries, Preferences
+    - Booking Engine: Search and Booking Logs
+    - Flight Reservation System: Booking Transactions, Special Service Requests (SSR), Ancillaries, Preferences, Orders
+    - Loyalty Platform: Loyalty Profiles and Preferences
+    - Social Platforms and Third Parties: Enhanced Customer Profiles
+    - Customer IDP: Identity Data for Profile Linking/Merging
+    - Contact Center System: Customer IVR (Interactive Voice Response) Interactions
+    - Other Operational Systems: Catering, Airport Operations, Lounge, Chauffeur Preferences (e.g., Car Type, Child Seat)
+    - In-flight Retail System: Customer Purchases
+    - Onboard Crew System & Meal Order System: Meal Orders and Cases
+    - Baggage System: Baggage Status Updates
+    - Check-In System: Check-in Transactions, Ancillaries, Preferences, Orders (e.g., Seat Selection, Extra Baggage, Upgrades)
 2. Customer events are then transferred from Solace to the Azure Event Hub.
 3. Large-scale updates to customer profiles are managed in batches using Azure Data Factory and integrated into the Customer 360 Database.
 4. Operational events, such as Flight Movements, are directly monitored by the Customer 360 Service.
@@ -157,7 +189,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 9. Batch requirements for Customer 360 Profiles and Preferences, like sharing anonymized customer data with partners, are handled by Azure Data Factory.
 
 
-#### Auto Case Creation with recommended resolution for call centre team 
+### Auto Case Creation with recommended resolution for call centre team 
 ![Interaction Diagram](CMP_AutoCase_flow.png)
 
 1. A Baggage Mishandling Event is published on the Solace Enterprise Messaging Platform.
@@ -170,7 +202,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 8. Customers are informed about their case based on set rules if needed
 9. The Stream Processing Engine (Azure Stream Analytics) may also publish event about the Baggage Mishandling Event, derived from the baggage system notifications and flight status, like instances where there is no baggage update for a spaecific customer and the flight has departed.
 
-#### IVR Call flow 
+### IVR Call flow 
 ![Interaction Diagram](CMP_IVRCall_flow.png)
 
 1. When a customer call is received on the Call Center platform, an IVR (Interactive Voice Response) Calling Event is published, including essential details like the customer's phone number and information about the assigned agent.
@@ -178,14 +210,14 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 3. The Customer 360 Service listens for the IVR Calling Event and retrieves customer details based on the phone number.
 4. The Customer 360 Service then sends a notification to load the customer profile through a websocket. In response, the CMP (Customer Management Platform) web application loads the Customer 360 profile
 5. Customer 360 profile shown to agent having all related information like 
-  - 360 live view of customer journey like current flight status, customer location (e.g. in hub, transport ), check in status, Partner booking etc 
-  - Relevant case information like auto case created for missing baggage  
-  - Potential offers for the calling customer from Offer system   
-  - Hyper personalisation information sourced from Social Platforms
-  - Potential resolution for the calling customer query using ML (Open AI) trained on Knowledge base 
+    - 360 live view of customer journey like current flight status, customer location (e.g. in hub, transport ), check in status, Partner booking etc 
+    - Relevant case information like auto case created for missing baggage  
+    - Potential offers for the calling customer from Offer system   
+    - Hyper personalisation information sourced from Social Platforms
+    - Potential resolution for the calling customer query using ML (Open AI) trained on Knowledge base 
 
   
-#### Auto compensation flow
+### Auto compensation flow
 ![Interaction Diagram](CMP_AutoCompensation_flow.png)
 
 1. Events related to operational disruptions, such as Flight Cancellations or Flight Status Updates, along with customer-specific incidents like Baggage Mishandling, are disseminated on the Solace Enterprise Messaging Platform.
@@ -198,14 +230,14 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 8. Relevant systems subscribed to these events on the Solace Enterprise Messaging Platform, like the Lounge System and Notification System, respond by providing the respective compensations, such as Meal Vouchers, and informing customers about these compensations.
 
 
-#### Consent Management flow
+### Consent Management flow
 ![Interaction Diagram](CMP_ConsentMgmt_flow.png)
 
 1. An API for retrieving and updating customer consent is made available through an API gateway. This allows external channels to access and modify consent information, Same API is accessible to CMP webapp as well. 
 2. Changes to customer consent, such as revocation, are handled by the Consent Management Service, which then broadcasts these updates to Solace.
 3. Applications that hold customer data are configured to subscribe to and act upon these Consent Change Events as they occur.
 
-#### Data Analysis flow 
+### Data Analysis flow 
 ![Interaction Diagram](CMP_DataAnalysis_flow.png)
 
 1. A variety of customer-related data and events are disseminated through the Solace Enterprise Messaging Platform.
@@ -221,7 +253,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 * Solace will be used for Realtime integration with other enterpise system and it will be bridged with Azure Event Hub 
 * Azure Data Factory will be used for all Batch integrations
 
-#### Data Model
+### Data Model
 ***
 
 ### Deployment Architecture
