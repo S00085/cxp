@@ -386,8 +386,11 @@ This layer provides the management & monitoring functions for the platform. Each
 - [Cloud Provider - Azure vs AWS vs OnPremises](../5.ADR/ADR01_Cloud_Provider_Selection.md)
 - [Process Orchestrator Selection to extend Journey Orchestrator Capability](../5.ADR/ADR02_Process_Orchestrator_Selection.md)
 - [Customer Profile Database Selection - Graph DB vs RDBMS vs Document DB](../5.ADR/ADR03_Customer_Profile_Database_Selection.md)
-- [Deployment_strategy - Azure Functions vs AKS vs ACI]()
-- [Stream processing engine selection for Customer Management Platform]()
-- 
-- 
+- [Deployment_strategy - Azure Functions vs AKS vs ACI](../5.ADR/ADR04_Deployment_Strategy.md)
+- [Stream processing engine selection for Customer Management Platform](../5.ADR/ADR05_Event_Streaming_Platform_Selection.md)
+- [Bridging Events from On-Prem systems to CMP EventHub](../5.ADR/ADR06_Bridging_Events_EventHub_Technology_Selection.md)
+- [Consent change handling approach](../5.ADR/ADR07_Consent_Change_Handling_Approach.md)
+- [Graph database Selection - Azure Cosmos for Apache Gremlin vs Neo4j](../5.ADR/ADR08_Graph_Database.md)
+- [CaseManagement Component Repository Selection](../5.ADR/ADR09_CaseManagement_Repository_Selection.md)
+- [GraphQL Engine VS REST API](../5.ADR/ADR10_GraphQL_Engine_vs_REST_API.md)
 
