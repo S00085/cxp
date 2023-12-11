@@ -22,7 +22,7 @@ Below are the team members of Visioneers
 [Architecture Analysis](2.architecture_analysis/README.md#architecture-analysis)
 - [Expected Quality Attributes](2.architecture_analysis/README.md#expected-quality-attributes)
 
-[Solution Architecture]
+[Solution Architecture](3.solution_architecture/README.md)
 - [Solution Overview](3.solution_architecture/README.md#solution-overview)
   - [Key Assumptions & Constraints](3.solution_architecture/README.md#key-assumptions--constraints)
   - [Key capabilities of proposed solution](3.solution_architecture/README.md#key-capabilities-of-proposed-solution)
