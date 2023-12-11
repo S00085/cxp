@@ -1,5 +1,6 @@
 
-[< Back](../3.solution_architecture/README.md)
+[> Home](../README.md)
+| [< Back](../3.solution_architecture/README.md#architecture-decision-records-adrs)
 
 ---
 # Deployment_strategy - Azure Functions vs AKS vs ACI
@@ -71,4 +72,5 @@ Decision influenced by the following factors
 
 ---
 
-[< Back](../3.solution_architecture/README.md)
+[> Home](../README.md)
+| [< Back](../3.solution_architecture/README.md#architecture-decision-records-adrs)

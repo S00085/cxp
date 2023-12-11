@@ -1,6 +1,6 @@
 
-[< Back](../3.solution_architecture/README.md)
-
+[> Home](../README.md)
+| [< Back](../3.solution_architecture/README.md#architecture-decision-records-adrs)
 ---
 
 # Graph database Selection - Azure Cosmos for Apache Gremlin vs Neo4j
@@ -46,4 +46,5 @@ Decision influenced by the following factors
 
 ---
 
-[< Back](../3.solution_architecture/README.md)
+[> Home](../README.md)
+| [< Back](../3.solution_architecture/README.md#architecture-decision-records-adrs)

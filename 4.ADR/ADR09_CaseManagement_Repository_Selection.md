@@ -1,6 +1,6 @@
 
-[< Back](../3.solution_architecture/README.md)
-
+[> Home](../README.md)
+| [< Back](../3.solution_architecture/README.md#architecture-decision-records-adrs)
 ---
 
 # CaseManagement Component Repository Selection
@@ -108,4 +108,5 @@ This recommendation aligns with the need for a database that is adaptable, effic
 
 ---
 
-[< Back](../3.solution_architecture/README.md)
+[> Home](../README.md)
+| [< Back](../3.solution_architecture/README.md#architecture-decision-records-adrs)

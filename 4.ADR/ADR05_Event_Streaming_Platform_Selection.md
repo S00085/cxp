@@ -1,5 +1,6 @@
 
-[< Back](../3.solution_architecture/README.md)
+[> Home](../README.md)
+| [< Back](../3.solution_architecture/README.md#architecture-decision-records-adrs)
 
 ---
 
@@ -88,4 +89,5 @@ For a unified customer management platform in Azure, **Azure Stream Analytics** 
 
 ---
 
-[< Back](../3.solution_architecture/README.md)
+[> Home](../README.md)
+| [< Back](../3.solution_architecture/README.md#architecture-decision-records-adrs)
