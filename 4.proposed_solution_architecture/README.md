@@ -159,6 +159,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 * Process management and Tasklist and Modeler UI from Camunda platform.
 * Power BI to serve reports and dashboars.
 * All APIs will be transit though API gateway (APIM).
+* Azure AD will be used for the User Authentication and authorization.
 
 
 
