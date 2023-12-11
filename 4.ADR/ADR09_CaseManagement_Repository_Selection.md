@@ -1,6 +1,7 @@
 
 [> Home](../README.md)
 | [< Back](../3.solution_architecture/README.md#architecture-decision-records-adrs)
+
 ---
 
 # CaseManagement Component Repository Selection

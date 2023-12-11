@@ -48,8 +48,7 @@ Below are the team members of Visioneers
     - [Logical View](3.solution_architecture/README.md#logical-view)
     - [Security Architecture](3.solution_architecture/README.md#security-architecture)
   - [Technology Stack](3.solution_architecture/README.md#technical-stack)
-  
-[Architecture Decision Records](3.solution_architecture/README.md#architecture-decision-records-adrs)
+- [Architecture Decision Records](3.solution_architecture/README.md#architecture-decision-records-adrs)
 
 
 
