@@ -19,17 +19,6 @@ At present the Customer consent management sprawls across disparate operational 
 * Synchronous approach 
 * Asynchronous Event driven approach
 
-## Decision Outcome
-
-Chosen option: "[Asynchronous Event driven approach]", because the approach allows loose coupling with the CMP & the exiting operational systems. This approach also has comparatively high availability & scalabilty characteristics. 
-
-### Implications / Consequences (both +ve & -ve) <!-- optional -->
-Below are the key implications of this decision
-
-1. The Operational system's handling the consent needs to ensure that they respect the consent updates / changes and have the necessary capability to ensure that the consent is in synch with CMP
-2. Any mismatch with the CMP , the information in CMP wins and the Operational system needs to handle conflict resolution at their end
-
-
 ## Pros and Cons of the Options <!-- optional -->
 
 ### [Synchronous approach]
@@ -54,3 +43,12 @@ In this approach the CMP is responsible only for capturing consent changes and p
 | CMP's consent mgmt. becomes simpler | |
 | Conflict resolution lies with operational systems which does not seep into CMP improves scalability, availability & extensibility of the CMP & Consent management as a whole||
 
+## Decision Outcome
+
+Chosen option: "[Asynchronous Event driven approach]", because the approach allows loose coupling with the CMP & the exiting operational systems. This approach also has comparatively high availability & scalabilty characteristics. 
+
+### Implications / Consequences (both +ve & -ve) <!-- optional -->
+Below are the key implications of this decision
+
+1. The Operational system's handling the consent needs to ensure that they respect the consent updates / changes and have the necessary capability to ensure that the consent is in synch with CMP
+2. Any mismatch with the CMP , the information in CMP wins and the Operational system needs to handle conflict resolution at their end

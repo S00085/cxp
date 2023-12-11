@@ -11,6 +11,23 @@ The CMP will provide the below key functions for the Airline
 - **Orchestrate** intelligent automated actions to provide a proactive and seamless digital experience for the Customers & Service Agents
 - **Publish** the unified Customer 360 degree view of the customer, real-time journey status as well as recommendations / actions for helping service channels to provide a personalized experience for the customers during their interactions
 
+## Key Assumptions & Constraints
+
+* Most of the Key operations systems can publish the requried events in realtime
+* Customer Identity is managed in one central IDP (Okta)
+* Customer Notification is managed through a central Notification Platform considering Corporate Communciation Standards
+* Customer interactions will remain with the existing channels like Contact center, Booking Engine
+* Enterprise Data Platform will own the data cleansing and dedupliction of the customer profile sources from various system
+* DPO aggremement is available to capture & process social profile informaiton based on optional customer consent **
+* Existing systems could either be on-premise or on cloud.
+* Consent management notification from Customer Management Platform is expected to be respected and processed by all the systems in the landscape 
+* New solution will be use existing enterprise logging solution
+* New solution will follow the current monitoring and observability defined by enterprise.
+* Existing enterprise defined security standards will be followed by the new solution e.g. Zero Trust Policy
+* Payment processing and refunds will be handled by an existing system in the landscape.
+* Enterprise Knowledge Management has ability to expose the content via proper interface for training in Open AI 
+
+
 ## Key capabilities of proposed solution
 
 The customer management platform (CMP) is envisioned to provide the below key capabilities for the Airline
@@ -363,20 +380,14 @@ This layer provides the management & monitoring functions for the platform. Each
 | Case Management API requests | 7 TPS |
 | Case Management create/updates API requests | 5 TPS |
 
-## Key Assumptions & Constraints
 
-* Most of the Key operations systems can publish the requried events in realtime
-* Customer Identity is managed in one central IDP (Okta)
-* Customer Notification is managed through a central Notification Platform considering Corporate Communciation Standards
-* Customer interactions will remain with the existing channels like Contact center, Booking Engine
-* Enterprise Data Platform will own the data cleansing and dedupliction of the customer profile sources from various system
-* DPO aggremement is available to capture & process social profile informaiton based on optional customer consent **
-* Existing systems could either be on-premise or on cloud.
-* Consent management notification from Customer Management Platform is expected to be respected and processed by all the systems in the landscape 
-* New solution will be use existing enterprise logging solution
-* New solution will follow the current monitoring and observability defined by enterprise.
-* Existing enterprise defined security standards will be followed by the new solution e.g. Zero Trust Policy
-* Payment processing and refunds will be handled by an existing system in the landscape.
-* Enterprise Knowledge Management has ability to expose the content via proper interface for training in Open AI 
+## Architecture Decision Records (ADRs)
 
+- [Cloud Provider - Azure vs AWS vs OnPremises](../5.ADR/ADR01_Cloud_Provider_Selection.md)
+- [Process Orchestrator Selection to extend Journey Orchestrator Capability](../5.ADR/ADR02_Process_Orchestrator_Selection.md)
+- [Customer Profile Database Selection - Graph DB vs RDBMS vs Document DB](../5.ADR/ADR03_Customer_Profile_Database_Selection.md)
+- [Deployment_strategy - Azure Functions vs AKS vs ACI]()
+- [Stream processing engine selection for Customer Management Platform]()
+- 
+- 
 

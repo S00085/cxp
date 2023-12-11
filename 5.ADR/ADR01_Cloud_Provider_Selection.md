@@ -66,7 +66,7 @@ Selection of the Cloud provider for hosting the Customer Management platform.
 * Chosen option - Azure.
 
 ### Decision influenced by the following factors:
-* **Integration** - Application integration with Microsoft components like Azure AD, OpenAI and Power BI Analytics.
-* **Data Platform** - The application is dependent on the data platform, which is rendered in the Azure.
-* **Cost**: In terms of cost, Azure is less expensive than AWS and OnPremises based on application deployable components.
+* **Data Platform** - The application is dependent on the data platform, which is hosted in the Azure.
 * **Data Science** - Manage End to End analytics workloads and advantage to have close integration with data bricks, the Azure data warehouse provides optimal performance in the cloud.
+* **Integration** - Application integration with Microsoft components like Microsoft Entra ID, OpenAI and Power BI Analytics.
+* **Cost**: In terms of cost, Azure is less expensive than AWS and OnPremises based on application deployable components.
