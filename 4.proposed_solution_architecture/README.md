@@ -130,7 +130,7 @@ The CMP will aggregate and enrich customer profiles using data from key followin
 6. A new case, including a proposed resolution, is generated in the case management system and assigned either to the Call Center or a specific individual for further actions.
 7. The Customer 360 service updates the customer relationship database with the new case reference.
 8. Customers are informed about their case based on set rules if needed
-9. The Stream Processing Engine may also distribute information about the Baggage Mishandling Event, derived from the baggage system notifications and flight status, like instances where there is no baggage update for a customer and the flight has departed.
+9. The Stream Processing Engine (Azure Stream Analytics) may also publish event about the Baggage Mishandling Event, derived from the baggage system notifications and flight status, like instances where there is no baggage update for a spaecific customer and the flight has departed.
 
 #### Auto compensation flow
 ![Interaction Diagram](CMP_AutoCompensation_flow.png)
@@ -171,8 +171,8 @@ The CMP will aggregate and enrich customer profiles using data from key followin
 2. Customer events are then transferred from Solace to the Azure Event Hub.
 3. Large-scale updates to customer profiles are managed in batches using Azure Data Factory and integrated into the Customer 360 Database.
 4. Operational events, such as Flight Movements, are directly monitored by the Customer 360 Service.
-5. Events that require stream processing, like security screening delays, are processed and channeled through Azure Stream Analytics.
-6. Events that need both batch stream processing and machine learning analysis are processed and relayed via Azure Databricks.
+5. Events that require stream processing, x number of repeated flight search attempts in last y hours from booking engine by customer to provide insights to call center agents through Azure Stream Analytics.
+6. Events that need complex analytics and machine learning on larger datasets are processed and relayed via Azure Databricks.
 7. Customer profile synchronization, including merging and deduplication from the EDP (Enterprise Data Platform), is performed using Azure Databricks.
 8. The Customer 360 Profile and Preferences API is made accessible to external systems, such as in-flight systems, via an API gateway.
 9. Batch requirements for Customer 360 Profiles and Preferences, like sharing anonymized customer data with partners, are handled by Azure Data Factory.
@@ -211,7 +211,7 @@ The CMP will aggregate and enrich customer profiles using data from key followin
 * For orchestrating microservices, we will utilize Azure Kubernetes Service. These microservices will be developed using Spring Boot (Reactive Stack).
 * The Hasura GraphQL Engine will used.
 * To address caching needs across the application, Azure Redis Cache will be used.
-* For event streaming, Azure Event Hub is the chosen platform, complemented by Azure Stream Analytics for stream processing. Azure Databricks will be employed for both batch stream processing and machine learning tasks.
+* For event streaming, Azure Event Hub is the chosen platform, complemented by Azure Stream Analytics to be used to handle real-time data processing, Azure Databricks will be used for complex analytics and machine learning on larger datasets.
 * For real-time analytics, Apache Druid is selected, and Power BI will be used for reporting, drawing data from Snowflake and Apache Druid.
 * For orchestrating customer journeys, we will use a Journey Orchestrator Microservice. Complex orchestrations requiring greater flexibility will be handled by the Camunda Process Orchestration Engine as extension to Journey Orchestrator Microservice.
 * Customer profiles, along with its relatioships such as bookings, flights, and baggage, will be stored in the Azure Cosmos graph DB.
@@ -249,7 +249,7 @@ The CMP will aggregate and enrich customer profiles using data from key followin
 | Database / Repository | Azure Cosmos (Graph) for Customer Profile, Azure Cosmos (Mongo) for Case Management, Azure PostgreSQL for Process Model, ADLS for Raw Data Storage, Elastic search for Orcherstation Engine, Minio for Files |
 | Event Streaming | Azure Event Hub |
 | Stream Processing | Azure Stream Analytics |
-| Stream Batch Processing & ML | Azure DataBricks |
+| Stream Batch Processing, complex analytics and machine learning | Azure DataBricks |
 | Realtime Analytics | Apache Druid |
 | GraphQL Engine | Hasura |
 | Reporting Service | Power BI |
