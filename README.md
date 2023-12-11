@@ -34,13 +34,13 @@ Below are the team members of Visioneers
     - [Integration](3.solution_architecture/README.md#integration)
     - [Security](3.solution_architecture/README.md#security)
     - [Data](3.solution_architecture/README.md#data)
-  - [Architecture Styles & Patterns]
-  - [Architecture Views]
-    - [Architecture Context]
-    - [Container Diagram]
-    - [Key Interaction Flows]
-      - [Unified Customer 360 profile flow]
-      - [Auto Case Creation with recommended resolution for call centre team]
+  - [Architecture Styles & Patterns](3.solution_architecture/README.md#architecture-styles--patterns)
+  - [Architecture Views](3.solution_architecture/README.md#architecture-views)
+    - [Architecture Context](3.solution_architecture/README.md#architecture-context)
+    - [Container Diagram](3.solution_architecture/README.md#container-diagram)
+    - [Key Interaction Flows](3.solution_architecture/README.md#key-interaction-flows)
+      - [Unified Customer 360 profile flow](3.solution_architecture/README.md#unified-customer-360-profile-flow)
+      - [Auto Case Creation with recommended resolution for call centre team](3.solution_architecture/README.md#auto-case-creation-with-recommended-resolution-for-call-centre-team)
       - [IVR Call flow]
       - [Auto compensation flow]
       - [Consent Management flow]
