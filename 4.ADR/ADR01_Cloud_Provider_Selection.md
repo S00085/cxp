@@ -1,6 +1,6 @@
 # Cloud Provider - Azure vs AWS vs OnPremises
 
-* Status: Proposed
+* Status: Accepted
 * Date:  07-12-2023
 
 ## Context and Problem Statement

@@ -1,6 +1,7 @@
 # GraphQL Engine VS REST API
-* Status: Proposed
-* Date:  06-12-2023
+
+* Status: Accepted
+* Date:  07-12-2023
 
 ## Context and Problem Statement
 

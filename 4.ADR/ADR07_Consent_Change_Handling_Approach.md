@@ -1,8 +1,7 @@
 # Consent change handling approach - decision
 
-* Status: accepted
-* Date: 2023-12-05 
-
+* Status: Accepted
+* Date:  07-12-2023
 
 ## Context and Problem Statement
 
