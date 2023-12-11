@@ -20,13 +20,6 @@ Selection of the graph database for storing Customer profile and relationships
 * Azure Cosmos for Apache Gremlin
 * Neo4j
 
-## Decision Outcome
-
-* Chosen option - Azure Cosmos for Apache Gremlin.
-
-Decision influenced by the following factors
-* Azure Cosmos DB is offered as a fully-managed service.
-
 ## Pros and Cons of the Options
 
 ### Azure Cosmos
@@ -38,3 +31,10 @@ Decision influenced by the following factors
 
 * Bad, additional management responsibility - Can be deployed in various ways, including on-premises, virtual machines, containers, or in the cloud, offering more deployment flexibility, albeit with additional management responsibilities.
 * Bad, limited scalability - Neo4j does support clustering to distribute the graph database over multiple machines, its scalability is comparatively limited.
+
+## Decision Outcome
+
+* Chosen option - Azure Cosmos for Apache Gremlin.
+
+Decision influenced by the following factors
+* Azure Cosmos DB is offered as a fully-managed service.
