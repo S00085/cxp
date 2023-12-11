@@ -93,6 +93,14 @@ The CMP will aggregate and enrich customer profiles using data from key followin
 
 ### Container Diagram
 ![Container Diagram](CMP_C4_Container_View.png)
+The **Customer Management Platform (CMP)'s** core capability to build and expose a unified customer profile with 360 degree view, consent management, Case management, Journey orchestration with process automation orchestration.
+
+## Integration
+Enterprise and partner systems can integrate with CMP with below capabilities:
+* **Realtime integration**: Source Systems can publish the events to and CMP portal will take action based on the events and also source systems can subscribe to events for the update customer 360 degree updates.
+* **Batch Processing**: Batch processing to collect customer specific information from Source systems or social media.
+* **API Gatway**: Exposing APIs to Source systems to fetch the customer profile and preferences.
+
 
 #### Auto Case Creation with recommended resolution for call centre team 
 ![Interaction Diagram](CMP_AutoCase_flow.png)
