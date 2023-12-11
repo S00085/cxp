@@ -20,6 +20,7 @@ Below are the team members of Visioneers
 
 [Architecture Analysis](2.architecture_analysis/README.md#architecture-analysis)
 - [Expected Quality Attributes](2.architecture_analysis/README.md#expected-quality-attributes)
+- [Key Non-Functional Requirements (Assumptions)](2.architecture_analysis/README.md#key-non-functional-requirements-assumptions)
 
 [Solution Architecture](3.solution_architecture/README.md)
 - [Solution Overview](3.solution_architecture/README.md#solution-overview)
