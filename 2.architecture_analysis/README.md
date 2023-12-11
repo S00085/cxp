@@ -30,7 +30,7 @@ Below are the key quality attributes identified for the proposed Customer Manage
 |12.| Maintainability  | Maintainability & evolution of the CMP is an important quality attribute since the system is the foundation of the customer centric organization|
 
 
-### Key Non-Functional Requirements 
+### Key Non-Functional Requirements (Assumptions)
 
 |  |   |
 | ------- | --- |
