@@ -29,6 +29,26 @@ Below are the key quality attributes identified for the proposed Customer Manage
 |11.| Security | Security including Authentication, Authorization are important quality attributes especially since the CMP will maintain sensitive customer related information|
 |12.| Maintainability  | Maintainability & evolution of the CMP is an important quality attribute since the system is the foundation of the customer centric organization|
 
+
+### Key Non-Functional Requirements 
+
+|  |   |
+| ------- | --- |
+|% Target Availability | 99.99% | 
+| Recovery Time Objective within region | Nill (for key critical core components like customer 360 service) , 10 Minutes Non components like Process Modeler  | 
+| Recovery Time Objective across region | 10 Minutes | 
+| Recovery Point Objective  within region | Nil |
+| Recovery Point Objective  across region | Nill (for key critical core components like customer 360 service) , < 1 Minute Non components like Process Modeler |
+| Max. number of unplanned outages in a year | 2 | 
+| Mean Time between failures | 6 Months | 
+| Customer Profile update events (All Channels including Direct, Service channels & Partners)|  400 TPS |
+| Customer Profile API Requests from channels & CMP UI| 500 TPS|
+| Customer 360 Profile Page Request from CMP UI| 25 TPS |
+| Case Management views from CMP UI| 5 TPS |
+| Case Management create/updates from CMP & UI| 4 TPS |
+| Case Management API requests | 7 TPS |
+| Case Management create/updates API requests | 5 TPS |
+
 ---
 
 [> Home](../README.md)
