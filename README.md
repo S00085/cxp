@@ -11,8 +11,6 @@ Below are the team members of Visioneers
 
 ## Table of Contents
 
-[Introduction](introduction.md)
-
 [Context & Motivation](1.context_and_motivation/README.md)
 
 - [Problem Brief](1.context_and_motivation/README.md#problem-brief)
