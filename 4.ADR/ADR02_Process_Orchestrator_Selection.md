@@ -1,5 +1,6 @@
 
-[< Back](../3.solution_architecture/README.md)
+[> Home](../README.md)
+| [< Back](../3.solution_architecture/README.md#architecture-decision-records-adrs)
 
 ---
 # Process Orchestrator Selection to extend Journey Orchestrator Capability
@@ -145,4 +146,5 @@ https://camunda.com/blog/2014/01/benchmarking-camunda-process-engine/
 
 ---
 
-[< Back](../3.solution_architecture/README.md)
+[> Home](../README.md)
+| [< Back](../3.solution_architecture/README.md#architecture-decision-records-adrs)

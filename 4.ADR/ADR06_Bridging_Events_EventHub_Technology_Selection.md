@@ -1,5 +1,6 @@
 
-[< Back](../3.solution_architecture/README.md)
+[> Home](../README.md)
+| [< Back](../3.solution_architecture/README.md#architecture-decision-records-adrs)
 
 ---
 
@@ -48,4 +49,5 @@ Chosen option: "Event Bridging from Enterprise Message Broker to Azure Event Hub
 
 ---
 
-[< Back](../3.solution_architecture/README.md)
+[> Home](../README.md)
+| [< Back](../3.solution_architecture/README.md#architecture-decision-records-adrs)
