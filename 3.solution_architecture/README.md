@@ -97,7 +97,7 @@ The key architectural styles and patterns used in the proposed architecture are
 ## Architecture Views
 
 ### Architecture Context
-![Architecture Context](CMP_System_Context_View.png)
+![Architecture Context](CMP_System_Context_View.svg)
 
 The **Customer Management Platform (CMP)** will serve as the central repository for all customer profile information, integrating and enhancing data from multiple sources to provide a holistic view of the customer.
 
@@ -139,7 +139,7 @@ The CMP will aggregate and enrich customer profiles using data from key followin
 
 
 ### Container Diagram
-![Container Diagram](CMP_C4_Container_View.png)
+![Container Diagram](CMP_C4_Container_View.svg)
 The **Customer Management Platform (CMP)'s** core capability to build and expose a unified customer profile with 360 degree view, consent management, Case management, Journey orchestration with process automation orchestration.
 
 #### Integration
@@ -179,10 +179,10 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 * Azure AD will be used for the User Authentication and authorization.
 
 
-
+## Key Interaction flows
 
 ### Unified Customer 360 profile flow 
-![Interaction Diagram](CMP_Customer360_flow.png)
+![Interaction Diagram](CMP_Customer360_flow.svg)
 
 1. Various customer-related data and events are distributed through the Solace Enterprise Messaging Platform. This includes information from:
     - Order Management System: Customer Orders, Ancillaries, Preferences
@@ -208,7 +208,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 
 
 ### Auto Case Creation with recommended resolution for call centre team 
-![Interaction Diagram](CMP_AutoCase_flow.png)
+![Interaction Diagram](CMP_AutoCase_flow.svg)
 
 1. A Baggage Mishandling Event is published on the Solace Enterprise Messaging Platform.
 2. This event is then relayed from Solace to the Azure Event Hub.
@@ -221,7 +221,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 9. The Stream Processing Engine (Azure Stream Analytics) may also publish event about the Baggage Mishandling Event, derived from the baggage system notifications and flight status, like instances where there is no baggage update for a spaecific customer and the flight has departed.
 
 ### IVR Call flow 
-![Interaction Diagram](CMP_IVRCall_flow.png)
+![Interaction Diagram](CMP_IVRCall_flow.svg)
 
 1. When a customer call is received on the Call Center platform, an IVR (Interactive Voice Response) Calling Event is published, including essential details like the customer's phone number and information about the assigned agent.
 2. This IVR Calling Event is then relayed from Solace to the Azure Event Hub
@@ -236,7 +236,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 
   
 ### Auto compensation flow
-![Interaction Diagram](CMP_AutoCompensation_flow.png)
+![Interaction Diagram](CMP_AutoCompensation_flow.svg)
 
 1. Events related to operational disruptions, such as Flight Cancellations or Flight Status Updates, along with customer-specific incidents like Baggage Mishandling, are disseminated on the Solace Enterprise Messaging Platform.
 2. Operational distruptions event are then relayed from Solace to the Azure Event Hub
@@ -249,14 +249,14 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 
 
 ### Consent Management flow
-![Interaction Diagram](CMP_ConsentMgmt_flow.png)
+![Interaction Diagram](CMP_ConsentMgmt_flow.svg)
 
 1. An API for retrieving and updating customer consent is made available through an API gateway. This allows external channels to access and modify consent information, Same API is accessible to CMP webapp as well. 
 2. Changes to customer consent, such as revocation, are handled by the Consent Management Service, which then broadcasts these updates to Solace.
 3. Applications that hold customer data are configured to subscribe to and act upon these Consent Change Events as they occur.
 
 ### Data Analysis flow 
-![Interaction Diagram](CMP_DataAnalysis_flow.png)
+![Interaction Diagram](CMP_DataAnalysis_flow.svg)
 
 1. A variety of customer-related data and events are disseminated through the Solace Enterprise Messaging Platform.
 2. These customer events are then relayed from Solace to the Azure Event Hub.
@@ -264,7 +264,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 4. The Reporting Service, such as Power BI, accesses Apache Druid for near real-time reporting and connects to Snowflake for more in-depth analytical purposes.
 
 ### Information Architecture
-![Information Architecture](CMP_Information_flow.png)
+![Information Architecture](CMP_Information_flow.svg)
 
 * “System of Record” for Customer profile information will be Customer Management Platform, sourcing information various customer touchpoints/systems
 * Customer Profile and preference one view will be shown in CMP as well as exposed as API via API gateway
@@ -275,7 +275,7 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 ***
 
 ### Deployment Architecture
-![Deployment Architecture](CMP_Deployment_View.png)
+![Deployment Architecture](CMP_Deployment_View.svg)
 
 * The new system will be deployed on Microsoft's Azure cloud platform. We will leverage Azure Platform Services like Azure Kubernetes Service and Azure Postgres which are independent of the Azure-specific environment to avoid vendor locking
 * The application will be available in multiple regions, with the primary region being selected based on proximity to the operational area. Within each region, the application will be distributed across multipe Availability Zones for enhanced resilience.
@@ -317,7 +317,7 @@ This layer provides the management & monitoring functions for the platform. Each
 
 
 ### Security Architecture
-![Security Architecture](CMP_Security_View.png)
+![Security Architecture](CMP_Security_View.svg)
 
 * Security at Rest will be enabled on all the data repository like Azure Cosmos, Azure PostgreSQL, ADLS
 * Security in Transit will be enabled using TLS
