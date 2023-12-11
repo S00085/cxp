@@ -43,8 +43,6 @@ Below are the key stakeholders concerns and their expectations from the newly en
 | Customer affairs & complaints| - Automated Case & compensation management on operational disruptions <br/> - Near real time alerts on operational disruption events|
 | Data Privacy Office | - Centralized consent management aligning to Data Privacy regulation by region <br/> - Reliable and accurate view of Personal information stored, processed & shared to partners <br/> - Ability to support personal data consent revocations by Customers|    
 
-**
-
 ## Current state key challenges
 Below are the key challenges observed in the Current state
 
