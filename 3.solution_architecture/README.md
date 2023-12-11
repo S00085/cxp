@@ -272,7 +272,13 @@ Enterprise and partner systems can integrate with CMP with below capabilities:
 * Azure Data Factory will be used for all Batch integrations
 
 ### Data Model
-***
+
+Below representation is an indicative logical data model for Customer 360 graph.
+
+![Data Model](Customer_Logical_Model.svg)
+
+* Nodes represents the key entities.
+* Edges represents the relationship between the entities.
 
 ### Deployment Architecture
 ![Deployment Architecture](CMP_Deployment_View.png)
