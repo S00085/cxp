@@ -1,3 +1,8 @@
+
+[< Back](../3.solution_architecture/README.md)
+
+---
+
 # CaseManagement Component Repository Selection
 
 * Status: Accepted
@@ -101,3 +106,6 @@ This recommendation aligns with the need for a database that is adaptable, effic
 - Performance: Fast access times and low latency in data retrieval are critical for case management systems, and Cosmos DB excels in this area.
 - Cost-Effectiveness: While the pricing model is based on RUs, it can be more cost-effective at scale, especially for workloads with unpredictable traffic.
 
+---
+
+[< Back](../3.solution_architecture/README.md)

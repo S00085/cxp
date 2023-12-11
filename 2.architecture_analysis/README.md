@@ -1,3 +1,8 @@
+[> Home](../README.md)
+| [< Prev](../1.context_and_motivation/README.md)  |  [Next >](../3.solution_architecture/README.md)
+
+---
+
 # Architecture Analysis
 Below are the key capabilities or aspects of the envisioned comprehensive customer management platform (CMP)
 
@@ -23,3 +28,9 @@ Below are the key quality attributes identified for the proposed Customer Manage
 |10.| Fault Tolerance | The Unified customer profile & near real time view of Customer journey are key capabilities in the Customer management platform which need to be highly fault tolerant|
 |11.| Security | Security including Authentication, Authorization are important quality attributes especially since the CMP will maintain sensitive customer related information|
 |12.| Maintainability  | Maintainability & evolution of the CMP is a important quality attribute since the system is the foundation of the customer centric organization|
+
+---
+
+[> Home](../README.md)
+[< Prev](../1.context_and_motivation/README.md)  |  [Next >](../3.solution_architecture/README.md)
+

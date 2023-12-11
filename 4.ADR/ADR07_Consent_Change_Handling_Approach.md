@@ -1,3 +1,8 @@
+
+[< Back](../3.solution_architecture/README.md)
+
+---
+
 # Consent change handling approach - decision
 
 * Status: Accepted
@@ -51,3 +56,7 @@ Below are the key implications of this decision
 
 1. The Operational system's handling the consent needs to ensure that they respect the consent updates / changes and have the necessary capability to ensure that the consent is in synch with CMP
 2. Any mismatch with the CMP , the information in CMP wins and the Operational system needs to handle conflict resolution at their end
+
+---
+
+[< Back](../3.solution_architecture/README.md)

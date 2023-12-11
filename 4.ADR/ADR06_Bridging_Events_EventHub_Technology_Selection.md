@@ -1,3 +1,8 @@
+
+[< Back](../3.solution_architecture/README.md)
+
+---
+
 # Bridging Events from On-Prem systems to CMP EventHub
 
 * Status: Accepted
@@ -40,3 +45,7 @@ In This approach, the events from the on-premise systems & saas solutions are pu
 ## Decision Outcome
 
 Chosen option: "Event Bridging from Enterprise Message Broker to Azure Event Hub", because this option reduces the scale of change in the existing on-premise & saas solutions as well as provides a consistent scalable approach to integrate new Event sources across on-premise & saas solutions.
+
+---
+
+[< Back](../3.solution_architecture/README.md)

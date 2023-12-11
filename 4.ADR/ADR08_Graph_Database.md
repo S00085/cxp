@@ -1,3 +1,8 @@
+
+[< Back](../3.solution_architecture/README.md)
+
+---
+
 # Graph database Selection - Azure Cosmos for Apache Gremlin vs Neo4j
 
 * Status: Accepted
@@ -38,3 +43,7 @@ Selection of the graph database for storing Customer profile and relationships
 
 Decision influenced by the following factors
 * Azure Cosmos DB is offered as a fully-managed service.
+
+---
+
+[< Back](../3.solution_architecture/README.md)

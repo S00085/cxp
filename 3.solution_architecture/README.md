@@ -1,3 +1,8 @@
+[> Home](../README.md)
+| [< Prev](../2.architecture_analysis/README.md) 
+
+---
+
 # Solution Overview
 The below diagram provides a conceptual view of the proposed solution - Customer Management Platform (CMP).
 
@@ -338,9 +343,9 @@ This layer provides the management & monitoring functions for the platform. Each
 * Azure Key Vault is implemented for the storage and management of security keys
 
 
-### Technical Stack
+### Technology Stack
 
-|  | Technical Stack  |
+|  | Technology Stack  |
 | ------- | --- |
 | Front End | React JS 18.x , Webpack 5 (Microfront End )|
 | Back End | Spring Boot 3 (Reactive), JDK 17 |
@@ -400,3 +405,6 @@ This layer provides the management & monitoring functions for the platform. Each
 - [CaseManagement Component Repository Selection](../4.ADR/ADR09_CaseManagement_Repository_Selection.md)
 - [GraphQL Engine VS REST API](../4.ADR/ADR10_GraphQL_Engine_vs_REST_API.md)
 
+---
+[> Home](../README.md)
+| [< Prev](../2.architecture_analysis/README.md) 

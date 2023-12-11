@@ -1,3 +1,8 @@
+
+[< Back](../3.solution_architecture/README.md)
+
+---
+
 # Customer Profile Database Selection - Graph DB vs RDBMS vs Document DB
 
 * Status: Accepted
@@ -55,3 +60,7 @@ Decision influenced by the following factors
 * Graph database is having better performance than RDBMS even when the volume and depth of relationship increases.
 * Flexibility to save records as Nodes and its relationship as Edges, with no need to perform any advance modelling.
 * Better performance in data traversal.
+
+---
+
+[< Back](../3.solution_architecture/README.md)
